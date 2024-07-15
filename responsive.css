@@ -277,31 +277,35 @@
     font-size: 14px;
   }
   section.banner-page .contents h1.main,
-  section.banner-page-jtc .contents h1.main, section.banner-page-contact .contents h1.main {
+  section.banner-page-jtc .contents h1.main,
+  section.banner-page-contact .contents h1.main {
     font-size: 24px;
     font-weight: 400;
   }
-  section.our-membership, section.contact-details {
+  section.our-membership,
+  section.contact-details {
     padding: 40px 0px;
   }
-  section.our-membership{
+  section.our-membership {
     padding-right: 16px;
     padding-left: 16px;
   }
-  .contact-details .details-box{
+  .contact-details .details-box {
     padding: 16px;
   }
-  .contact-details .details-box{
+  .contact-details .details-box {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  .contact-details .details-box .call{
+  .contact-details .details-box .call {
     column-gap: 10px;
   }
-  .contact-details .details-box .address p, .contact-details .details-box .call p, .contact-details .details-box .map p {
+  .contact-details .details-box .address p,
+  .contact-details .details-box .call p,
+  .contact-details .details-box .map p {
     font-size: 16px;
     line-height: 24px;
-}
+  }
   section.banner-page .contents p.para {
     font-size: 14px;
   }
@@ -351,22 +355,23 @@
   select#subscriptionPlan {
     max-width: 100%;
   }
-  .map{
+  .map {
     padding: 0px 16px;
   }
-  .map, .map iframe {
+  .map,
+  .map iframe {
     width: 100%;
     height: 90%;
   }
-  section.contact-us-page .contact-form h1{
+  section.contact-us-page .contact-form h1 {
     font-weight: 500;
     font-size: 32px;
   }
-  section.contact-us-page .contact-form p{
+  section.contact-us-page .contact-form p {
     font-size: 16px;
     line-height: 24px;
   }
-  section.contact-us-page{
+  section.contact-us-page {
     padding: 40px 0;
   }
 }

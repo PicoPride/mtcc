@@ -977,7 +977,9 @@ section.milestones .swiper-slide:nth-child(4n + 4) .img::before {
 
 section.banner-page,
 section.banner-page-jtc,
-section.banner-page-contact, section.contact-details, section.contact-us-page {
+section.banner-page-contact,
+section.contact-details,
+section.contact-us-page {
   padding: 20px 100px 0px 100px;
   padding: 40px 40px;
 }
@@ -994,6 +996,9 @@ section.banner-page-contact .contents {
   flex-direction: column;
   color: #fff;
   padding: 30px 60px;
+}
+section.banner-page-contact .contents{
+  justify-content: flex-start;
 }
 section.banner-page-contact .contents {
   background: url("./assets/imgs/contact.jpeg") center/cover no-repeat;
@@ -1207,52 +1212,56 @@ button.btn.submit-btn {
 }
 .contact-details .details-box {
   max-width: 90%;
-  background: #EEF1F8;
+  background: #eef1f8;
   border-radius: 16px;
   padding: 32px;
 }
-.contact-details .details-box h1{
+.contact-details .details-box h1 {
   font-size: 30px;
   padding-bottom: 10px;
   font-weight: 700;
-  color: #231E60;
+  color: #231e60;
 }
-.contact-details .details-box .address, .contact-details .details-box .call, .contact-details .details-box .mail{
+.contact-details .details-box .address,
+.contact-details .details-box .call,
+.contact-details .details-box .mail {
   display: flex;
   justify-content: start;
   align-items: flex-start;
   column-gap: 15px;
   padding-bottom: 10px;
 }
-.contact-details .details-box .address img, .contact-details .details-box .call img, .contact-details .details-box .mail img{
+.contact-details .details-box .address img,
+.contact-details .details-box .call img,
+.contact-details .details-box .mail img {
   max-width: 80%;
   width: 30px;
 }
-.contact-details .details-box .address p{
+.contact-details .details-box .address p {
   font-size: 20px;
   font-weight: 400;
   color: #484848;
   line-height: 30px;
 }
 
-section.contact-us-page{
-  background: #EEF1F8;
+section.contact-us-page {
+  background: #eef1f8;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-section.contact-us-page .contact-form h1{
-  color: #231E60;
+section.contact-us-page .contact-form h1 {
+  color: #231e60;
   size: 30px;
   line-height: 50px;
   font-weight: 400;
 }
-section.contact-us-page .contact-form p{
+section.contact-us-page .contact-form p {
   font-size: 18px;
   color: #333333;
   line-height: 30px;
   font-weight: 400;
 }
-section.contact-us-page .contact-form form{
+section.contact-us-page .contact-form form {
   background: #fff;
   padding: 24px;
   border-radius: 8px;
@@ -1260,14 +1269,14 @@ section.contact-us-page .contact-form form{
   box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
 }
 button.btn.btn-block {
-  background: #FBA01A;
+  background: #fba01a;
   padding: 10px 16px;
   border-radius: 16px;
   font-size: 18px;
-  color: #231E60;
+  color: #231e60;
   font-weight: 400;
 }
-section.contact-us-page .contact-form input::placeholder{
+section.contact-us-page .contact-form input::placeholder {
   color: #767676;
   font-size: 16px;
 }
@@ -1282,7 +1291,3 @@ section.contact-us-page .contact-form select#countryCode {
 section.contact-us-page .contact-form textarea#additionalInfo {
   height: 50px;
 }
-
-
-
-
