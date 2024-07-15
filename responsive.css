@@ -1,0 +1,449 @@
+/* @media (max-width: 1200px) {
+    section.about-us .container,
+    section.our-services .container,
+    section.testimonials .container, 
+    section.privacy .container {
+      width: 90%;
+      padding: 0 30px;
+    }
+  } */
+
+@media (max-width: 992px) {
+  section.about-us,
+  section.our-services,
+  section.testimonials {
+    padding: 60px 0;
+  }
+
+  section.membership .container .row {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  section.membership .container .first-part,
+  section.membership .container .second-part {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.about-us .container,
+  section.our-services .container,
+  section.testimonials .container,
+  section.privacy .container {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 16px;
+    position: relative;
+  }
+  section.privacy {
+    padding: 40px 16px;
+  }
+  section.privacy .container .contents {
+    max-width: 100%;
+  }
+  section.our-services .container::after {
+    content: none;
+  }
+  section.our-services .container :before {
+    content: none;
+  }
+  section.about-us,
+  section.our-services,
+  section.testimonials {
+    padding: 40px 16px;
+  }
+  .our-services .icon-boxes {
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .our-services .icon-boxes .ic-box {
+    max-width: 45%;
+    gap: 10px;
+  }
+  .testimonials .swiper-button-prev,
+  .testimonials .swiper-button-next {
+    display: none;
+  }
+  section.testimonials .container::after {
+    content: none;
+  }
+  section.our-services .container .contents .heading,
+  section.testimonials .heading {
+    font-size: 16px;
+  }
+  section.our-services .sec-heading,
+  section.testimonials .sec-heading {
+    font-size: 28px;
+  }
+  section.testimonials .sec-heading {
+    margin-top: 10px;
+  }
+  .our-services .icon-boxes .ic-box img {
+    margin-bottom: 10px;
+    max-width: 75px;
+  }
+  .our-services .icon-boxes .ic-box p {
+    padding: 8px 15px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  section.privacy {
+    padding: 40px 16px;
+  }
+  section.privacy .container .all-contents p,
+  section.privacy .container .all-contents h2,
+  section.privacy .container .all-contents li {
+    font-size: 16px;
+  }
+  .about-slider .swiper-slide {
+    width: 90%;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  section.about-slider {
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+  section.about-slider {
+    height: 450px;
+  }
+  .about-slider .swiper-button-next,
+  .about-slider .swiper-button-prev {
+    display: none;
+  }
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+  }
+  section.membership {
+    display: block;
+  }
+
+  .swiper-slide .slide-para {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .swiper-slide .slide-heading {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+
+  section.about-us .container .contents,
+  section.our-services .container .contents {
+    row-gap: 20px;
+  }
+
+  section.about-us .sec-heading,
+  section.our-services .sec-heading,
+  section.testimonials .sec-heading,
+  section.milestones .milestones-para,
+  section.membership .container .first-part .plan-heading {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  section.about-us .about,
+  section.about-us .heading,
+  section.testimonials .heading {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  section.milestones .container {
+    padding: 0 30px;
+  }
+
+  section.membership .container .second-part .box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .our-services .icon-boxes {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .our-services .icon-boxes .ic-box {
+    max-width: 100%;
+  }
+  section.about-us .container::after,
+  section.about-us .container:before,
+  section.milestones .container::before {
+    content: none;
+  }
+  section.membership .container .second-part {
+    border: none;
+    background: transparent;
+  }
+  section.membership .container .second-part .box .first-content {
+    gap: 10px;
+    max-width: 100%;
+  }
+  section.membership .container {
+    max-width: 767px;
+    padding: 0 16px;
+  }
+  section.membership .container .second-part {
+    padding: 0;
+  }
+  section.membership .container .second-part .box {
+    align-items: normal;
+  }
+  section.membership .container .row {
+    align-items: normal;
+  }
+  section.membership .container .second-part .box .first-content h2 {
+    color: #231e60;
+  }
+  section.membership .container .second-part .box .second-content .first-point,
+  section.membership .container .second-part .box .second-content {
+    align-items: flex-start;
+  }
+  section.membership .container .second-part .box .second-content .first-point,
+  section.membership
+    .container
+    .second-part
+    .box
+    .second-content
+    .second-point {
+    gap: 16px;
+  }
+  section.membership
+    .container
+    .second-part
+    .box
+    .second-content
+    .second-point {
+    align-items: flex-start;
+  }
+  section.membership .container .second-part .box .second-content .points h3 {
+    font-size: 18px;
+  }
+  .desktop {
+    display: block;
+    border: 1px solid #231e60;
+    background: #fff;
+    padding: 12px 8px;
+    color: #231e60;
+    font-size: 16px;
+    border-radius: 16px;
+    display: inline-block;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+  }
+  section.membership .container button.join.desktop img {
+    width: 20px;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .swiper-slide.swiper-slide {
+    flex-direction: column;
+  }
+  .milestone-swiper .content::before {
+    content: none;
+  }
+
+  section.banner-page,
+  section.banner-page-jtc,
+  section.banner-page-contact {
+    padding: 0;
+  }
+  section.main-content {
+    padding: 0;
+  }
+  section.main-content .img-contents img {
+    padding: 40px 0;
+  }
+  section.banner-page .contents,
+  section.banner-page-jtc .contents,
+  section.banner-page-contact .contents {
+    padding: 40px 16px;
+  }
+  section.banner-page-jtc .contents {
+    justify-content: flex-end;
+  }
+  section.banner-page .contents h3.date {
+    font-size: 14px;
+  }
+  section.banner-page .contents h1.main,
+  section.banner-page-jtc .contents h1.main, section.banner-page-contact .contents h1.main {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  section.our-membership, section.contact-details {
+    padding: 40px 0px;
+  }
+  section.our-membership{
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .contact-details .details-box{
+    padding: 16px;
+  }
+  .contact-details .details-box{
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .contact-details .details-box .call{
+    column-gap: 10px;
+  }
+  .contact-details .details-box .address p, .contact-details .details-box .call p, .contact-details .details-box .map p {
+    font-size: 16px;
+    line-height: 24px;
+}
+  section.banner-page .contents p.para {
+    font-size: 14px;
+  }
+  section.banner-page .contents {
+    max-height: 400px;
+  }
+  section.our-membership .container {
+    border: none;
+  }
+  section.our-membership .container {
+    padding: 0;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    margin: 0;
+    row-gap: 0px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 16px;
+  }
+  .our-membership .col-6 {
+    padding-bottom: 15px;
+  }
+  section.our-membership .container .heading h1 {
+    padding: 15px 0;
+  }
+  section.form-section {
+    padding: 0px 16px 40px;
+    background: #fff;
+  }
+  section.form-section::before {
+    content: none;
+  }
+  section.form-section .form-container {
+    padding: 16px;
+  }
+  .form-container label {
+    font-size: 16px;
+  }
+  .subscription-box p {
+    font-size: 16px;
+  }
+  select#subscriptionPlan {
+    max-width: 100%;
+  }
+  .map{
+    padding: 0px 16px;
+  }
+  .map, .map iframe {
+    width: 100%;
+    height: 90%;
+  }
+  section.contact-us-page .contact-form h1{
+    font-weight: 500;
+    font-size: 32px;
+  }
+  section.contact-us-page .contact-form p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section.contact-us-page{
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-slide .slide-para {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .swiper-slide .slide-heading {
+    font-size: 24px;
+  }
+
+  section.about-us,
+  section.our-services,
+  section.testimonials,
+  section.milestones,
+  section.membership {
+    padding: 40px 0;
+  }
+
+  section.about-us .about-para,
+  section.membership .container .first-part .plan-para,
+  section.milestones .milestones-heading,
+  section.membership .container .first-part .plan {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .scroll-in li {
+    font-size: 18px;
+  }
+
+  .milestone-swiper .main-heading h2 {
+    display: none;
+  }
+
+  .milestone-swiper .swiper-slide:nth-child(4n + 1) .sub-heading h4 {
+    color: #231e60;
+  }
+
+  .milestone-swiper .swiper-slide:nth-child(4n + 2) .sub-heading h4 {
+    color: #fba01a;
+  }
+
+  .milestone-swiper .swiper-slide:nth-child(4n + 3) .sub-heading h4 {
+    color: #b2cd30;
+  }
+
+  .milestone-swiper .swiper-slide:nth-child(4n + 4) .sub-heading h4 {
+    color: #5573bc;
+  }
+  section.milestones .swiper-slide img {
+    width: 100%;
+  }
+
+  .milestone-swiper .content .sub-heading h4 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .milestone-swiper .content .sub-heading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .milestone-swiper .content .sub-heading {
+    margin-top: 20px;
+  }
+  .swiper-wrapper {
+    column-gap: 0;
+  }
+
+  section.membership .container .second-part .box .second-content {
+    flex-direction: column;
+    gap: 16px;
+    background: #fff;
+    padding: 16px;
+  }
+}
