@@ -27,6 +27,9 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+  }
   section.about-us .container,
   section.our-services .container,
   section.testimonials .container,
@@ -256,7 +259,8 @@
 
   section.banner-page,
   section.banner-page-jtc,
-  section.banner-page-contact {
+  section.banner-page-contact,
+  section.banner-page-about {
     padding: 0;
   }
   section.main-content {
@@ -267,7 +271,8 @@
   }
   section.banner-page .contents,
   section.banner-page-jtc .contents,
-  section.banner-page-contact .contents {
+  section.banner-page-contact .contents,
+  section.banner-page-about .contents {
     padding: 40px 16px;
   }
   section.banner-page-jtc .contents {
@@ -285,6 +290,9 @@
   section.our-membership,
   section.contact-details {
     padding: 40px 0px;
+  }
+  section.banner-page-contact .contents {
+    justify-content: flex-end;
   }
   section.our-membership {
     padding-right: 16px;
@@ -331,7 +339,7 @@
     border-radius: 16px;
   }
   .our-membership .col-6 {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
   section.our-membership .container .heading h1 {
     padding: 15px 0;
@@ -373,6 +381,54 @@
   }
   section.contact-us-page {
     padding: 40px 0;
+  }
+
+  section.banner-page-event-details::after {
+    content: none;
+  }
+  .top-right-dets .price-1,
+  .top-right-dets .price-2 {
+    justify-content: space-between;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  section.banner-page-event-details .top-right-dets {
+    row-gap: 0;
+  }
+  section.banner-page-event-details .item-2 {
+    border: none;
+    padding-top: 0;
+  }
+  section.testimonials .swiper::after {
+    content: none;
+  }
+  section.our-services .icon-boxes::after {
+    content: none;
+  }
+  .testimonials .swiper {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  section.banner-page-jtc .contents,
+  section.banner-page-contact .contents,
+  section.banner-page-about .contents {
+    max-height: 380px;
+  }
+  section.banner-page-event-details .event-details {
+    padding-left: 10px;
+  }
+  section.banner-page-about .contents h1.main {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  section.banner-page-about .contents p.para {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  section.banner-page-about .contents {
+    justify-content: flex-end;
   }
 }
 
@@ -450,5 +506,81 @@
     gap: 16px;
     background: #fff;
     padding: 16px;
+  }
+  section.banner-page-event-details {
+    padding: 40px 10px;
+    padding-top: 0;
+  }
+  section.banner-page-event-details .left-img {
+    object-fit: cover;
+    min-height: 210px;
+  }
+  section.banner-page-event-details .event-details {
+    padding-top: 20px;
+  }
+  .top-left-dets {
+    border: none;
+  }
+  .price-1 h4 span,
+  .price-2 h4 span {
+    font-size: 20px;
+  }
+  .book-btn {
+    padding: 8px;
+    /* height: auto;
+    width: 60%; */
+    font-size: 14px;
+  }
+  .price-1,
+  .price-2 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  .top-left-dets h4.date-time {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  .top-left-dets .me-2 {
+    width: 30px;
+  }
+  section.banner-page-event-details .event-card {
+    padding: 12px;
+  }
+  section.about-event {
+    padding: 40px 15px 0 15px;
+  }
+  section.about-event .contents {
+    padding-right: 0;
+  }
+  .map-card-header iframe {
+    max-height: 230px;
+    border-radius: 16px 16px 0 0;
+  }
+  section.about-event .map-card .map-card-footer h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section.about-event .map-card .map-card-footer p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section.you-may-like-slider {
+    padding: 40px 0;
+  }
+  .may-like-slider .swiper-button-next,
+  .may-like-slider .swiper-button-prev {
+    display: none;
+  }
+  section.you-may-like-slider .like-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .desktop-hide {
+    display: flex;
+  }
+  .price-1 h4,
+  .price-2 h4 {
+    width: 40%;
   }
 }

@@ -1,4 +1,6 @@
-var swiper = new Swiper(".mySwiper", {
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize .mySwiper
+  new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
     centeredSlides: true,
@@ -7,10 +9,6 @@ var swiper = new Swiper(".mySwiper", {
     fadeEffect: {
       crossFade: true,
     },
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -25,13 +23,12 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
   });
-  
-document.addEventListener("DOMContentLoaded", function () {
-  const milestoneSwipers = document.querySelectorAll(".milestone-swiper");
 
+  // Initialize .milestone-swiper
+  const milestoneSwipers = document.querySelectorAll(".milestone-swiper");
   milestoneSwipers.forEach((swiperEl, index) => {
-    const swiper = new Swiper(swiperEl, {
-      slidesPerView: "1.75",
+    new Swiper(swiperEl, {
+      slidesPerView: 1.75,
       centeredSlides: false,
       direction: "horizontal",
       speed: 1000,
@@ -48,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         768: {
           slidesPerView: 1.4,
-          spaceBetween: 5
+          spaceBetween: 5,
         },
         1180: {
           slidesPerView: 1.5,
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         1920: {
           slidesPerView: 1.75,
         },
-
         2001: {
           slidesPerView: 2,
         },
@@ -72,15 +68,14 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   });
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const milestoneSwipers = document.querySelectorAll(".testimonials-swiper");
 
-  milestoneSwipers.forEach((swiperEl, index) => {
-    const swiper = new Swiper(swiperEl, {
+  // Initialize .testimonials-swiper
+  const testimonialSwipers = document.querySelectorAll(".testimonials-swiper");
+  testimonialSwipers.forEach((swiperEl, index) => {
+    new Swiper(swiperEl, {
       slidesPerView: 3.5,
       centeredSlides: false,
-      spaceBetween: 30,
+      spaceBetween: 10,
       loop: true,
       pagination: {
         el: `.swiper-pagination-${index}`,
@@ -92,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       breakpoints: {
         0: {
-          slidesPerView: 1.1,
+          slidesPerView: 1.2,
         },
         768: {
           slidesPerView: 3.5,
