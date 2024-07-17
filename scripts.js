@@ -35,13 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
       spaceBetween: 30,
       mousewheel: true,
       loop: false,
-      pagination: {
-        el: `.swiper-pagination-${index}`,
-        clickable: true,
-      },
+      // pagination: {
+      //   el: `.swiper-pagination-${index}`,
+      //   clickable: true,
+      // },
       breakpoints: {
         0: {
           slidesPerView: 1.3,
+          spaceBetween: 10,
         },
         768: {
           slidesPerView: 1.4,

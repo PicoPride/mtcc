@@ -233,7 +233,7 @@
     display: block;
     border: 1px solid #231e60;
     background: #fff;
-    padding: 12px 8px;
+    padding:  8px;
     color: #231e60;
     font-size: 16px;
     border-radius: 16px;
@@ -243,6 +243,9 @@
     justify-content: center;
     align-items: center;
     transition: all 0.4s ease;
+  }
+  .desktop img{
+    max-width: 25px;
   }
   section.membership .container button.join.desktop img {
     width: 20px;
@@ -392,6 +395,7 @@
     border: 1px solid #e8e8e8;
     border-radius: 8px;
     padding: 8px;
+    column-gap: 25px;
   }
   section.banner-page-event-details .top-right-dets {
     row-gap: 0;
@@ -430,7 +434,59 @@
   section.banner-page-about .contents {
     justify-content: flex-end;
   }
+
+  section.membership-plan {
+    padding: 40px 0;
+  }
+
+  section.membership-plan .contents,
+  section.membership-plan .box {
+    flex-direction: column;
+  }
+  section.membership-plan .right-content{
+    margin-left: 0;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  section.membership-plan .second-content{
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+    padding: 16px;
+  }
+  section.membership-plan .box .second-content .first-point, section.membership-plan .box .second-content .second-point {
+    row-gap: 15px;
+  }
+  section.membership-plan h2.club{
+    font-size: 32px;
+    font-weight: 500;
+  }
+  section.membership-plan .box .second-content .points h3{
+    font-size: 18px;
+  }
+  section.membership-plan .box .first-content{
+    max-width: 100%;
+  }
+  section.membership-plan p{
+    font-size: 16px;
+  }
+  section.membership-plan .box .first-content h2{
+    font-size: 24px;
+  }
+  section.milestones .swiper {
+    padding-top: 20px;
+    padding-bottom: 0px;
 }
+.book-btn-mobile{
+  width: 55%;
+}
+.book-btn-mobile img{
+  max-width: 20px;
+}
+}
+
 
 @media (max-width: 576px) {
   .swiper-slide .slide-para {
@@ -513,7 +569,7 @@
   }
   section.banner-page-event-details .left-img {
     object-fit: cover;
-    min-height: 210px;
+    min-height: 200px;
   }
   section.banner-page-event-details .event-details {
     padding-top: 20px;
@@ -523,7 +579,7 @@
   }
   .price-1 h4 span,
   .price-2 h4 span {
-    font-size: 20px;
+    font-size: 24px;
   }
   .book-btn {
     padding: 8px;
