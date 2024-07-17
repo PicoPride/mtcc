@@ -146,6 +146,54 @@ header,
 footer {
   max-width: 100%;
 }
+.cursor {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%);
+  border-radius: 50%;
+  background: transparent;
+  pointer-events: none;
+  z-index: 111;
+  border: 1px solid #000;
+  transition: all 0.2s ease-out;
+  animation: moveCursor1 .5s infinite alternate;
+}
+
+.expand {
+  background: transparent;
+  animation: moveCursor2 .5s forwards;
+  border: 1px solid #000;
+}
+
+@keyframes moveCursor1 {
+  from {
+      transform: scale(1);
+  }
+
+  to {
+      transform: scale(.8);
+  }
+}
+
+@keyframes moveCursor2 {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(2);
+  }
+
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
 header img,
 footer img {
   width: 100%;
@@ -386,6 +434,7 @@ section.about-us .container:before {
   opacity: 0.05;
   left: 0px;
   top: -10%;
+  z-index: -1;
 }
 section.about-us .container::after {
   content: "";
@@ -400,6 +449,7 @@ section.about-us .container::after {
   opacity: 0.05;
   right: 0;
   top: -10%;
+  z-index: -1;
 }
 
 section.milestones {
@@ -488,6 +538,7 @@ section.milestones .swiper-slide:nth-child(2n) {
   color: #231e60;
   position: relative;
 }
+
 /* .milestone-swiper .main-heading::after {
   content: "";
   background: url(./assets/imgs/bg.jpeg) center / cover no-repeat;
@@ -704,7 +755,7 @@ section.our-services {
   justify-content: space-evenly;
   align-items: flex-end;
   margin-top: 60px;
-  column-gap: 60px;
+  /* column-gap: 60px; */
   /* position: relative; */
 }
 section.our-services .sec-heading {
@@ -723,7 +774,7 @@ section.our-services .sec-heading {
   max-width: 120px;
 }
 .our-services .icon-boxes .ic-box p {
-  padding: 12px 24px;
+  padding:  24px;
   color: #fff;
   background: #231e60;
   max-width: 95%;
@@ -734,7 +785,7 @@ section.our-services .sec-heading {
   line-height: 26px;
 }
 
-section.our-services .container :before {
+section.our-services .icon-boxes::before {
   content: "";
   background: url(./assets/imgs/ribbon-1.png);
   z-index: 1;
@@ -744,9 +795,9 @@ section.our-services .container :before {
   background-size: 18%;
   background-position: left;
   background-repeat: no-repeat;
-  opacity: 0.2%;
-  left: -70px;
-  top: -30%;
+  opacity: 0.05;
+  left: -74px;
+  top: -20%;
 }
 /* section.our-services .container::after {
   content: "";
@@ -1780,4 +1831,8 @@ section.membership-plan .box {
   row-gap: 10px;
   width: 100%;
   justify-content: space-around;
+}
+
+section.your-program-banner .contents{
+  background: url("./assets/imgs/list-banner.png") center/cover no-repeat;
 }

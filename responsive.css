@@ -31,7 +31,6 @@
     padding-left: 15px;
   }
   section.about-us .container,
-  section.our-services .container,
   section.testimonials .container,
   section.privacy .container {
     width: 100%;
@@ -56,17 +55,7 @@
   section.testimonials {
     padding: 40px 16px;
   }
-  .our-services .icon-boxes {
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .our-services .icon-boxes .ic-box {
-    max-width: 45%;
-    gap: 10px;
-  }
+
   .testimonials .swiper-button-prev,
   .testimonials .swiper-button-next {
     display: none;
@@ -87,10 +76,13 @@
   }
   .our-services .icon-boxes .ic-box img {
     margin-bottom: 10px;
-    max-width: 75px;
+    max-width: 120px;
+  }
+  .mb{
+    margin-bottom: 30px;
   }
   .our-services .icon-boxes .ic-box p {
-    padding: 8px 15px;
+    padding: 16px 12px;
     max-width: 100%;
     font-size: 14px;
     line-height: 20px;
@@ -168,10 +160,7 @@
     gap: 20px;
   }
 
-  .our-services .icon-boxes {
-    flex-direction: column;
-    gap: 30px;
-  }
+
 
   .our-services .icon-boxes .ic-box {
     max-width: 100%;
@@ -484,6 +473,21 @@
 }
 .book-btn-mobile img{
   max-width: 20px;
+}
+.our-services .icon-boxes {
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.our-services .icon-boxes .ic-box {
+  max-width: 45%;
+  gap: 10px;
+}
+.our-services .icon-boxes {
+  /* flex-direction: column; */
+  gap: 30px;
 }
 }
 
