@@ -1066,7 +1066,9 @@ section.about-event,
 section.you-may-like-slider,
 section.membership-plan,
 section.explore-club,
-section.mtcc-club-family {
+section.mtcc-club-family,
+section.call-to-action,
+section.home-about-us {
   /* padding: 20px 100px 0px 100px; */
   padding: 40px 40px;
 }
@@ -2058,9 +2060,9 @@ section.mtcc-club-family {
 section.mtcc-club-family p.club-para {
   font-size: 18px;
   font-weight: 700;
-  color: #231E60;
+  color: #231e60;
 }
-section.mtcc-club-family .buttonWithPara{
+section.mtcc-club-family .buttonWithPara {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2071,18 +2073,127 @@ section.mtcc-club-family .family-contents {
   flex-direction: column;
   gap: 6px;
 }
-section.mtcc-club-family .buttonWithPara h2{
+section.mtcc-club-family .buttonWithPara h2 {
   font-size: 54px;
-  color: #231E60;
+  color: #231e60;
   font-weight: 500;
   /* line-height: 55px; */
   max-width: 60%;
 }
-section.mtcc-club-family p.large-para{
+section.mtcc-club-family p.large-para {
   font-size: 24px;
-  color: #231E60;
+  color: #231e60;
   font-weight: 400;
 }
+
+section.home-about-us {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+section.home-about-us .about-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #231e60;
+}
+section.home-about-us .about-long-heading {
+  font-size: 54px;
+  color: #231e60;
+  font-weight: 500;
+  line-height: 55px;
+}
+section.home-about-us .heading-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.home-about-us .about-para {
+  font-size: 24px;
+  color: #231e60;
+  font-weight: 400;
+}
+.about-sec-part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 50px;
+}
+.about-sec-part .img-fluid{
+  width: 420px;
+  max-width: 100%;
+  position: relative;
+  margin-left: 50px;
+}
+.about-sec-part .changing-text{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 45px;
+  color: #231E60;
+  max-width: 30%;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+}
+.about-sec-part .changing-text span{
+  font-weight: 700;
+}
+
+.about-first-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 15px;
+}
+.culture-tag{
+  color: #9865AA;
+  border: 1px solid #9865AA;
+  padding: 10px;
+  border-radius: 32px;
+  font-size: 16px;
+}
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.list-your-program{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #231E60;
+}
+section.list-your-program .program-heading{
+  font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+section.list-your-program .program-long-heading {
+  font-size: 54px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 55px;
+}
+section.list-your-program .list-para {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  max-width: 80%;
+}
+.list-img{
+  width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2092,7 +2203,7 @@ section.mtcc-club-family p.large-para{
 
 
 section.mtcc-club-family p.large-para span {
-  color: #FBA01A;
+  color: #fba01a;
 }
 section.mtcc-club-family .item-container {
   padding-top: 50px;
@@ -2107,40 +2218,40 @@ section.mtcc-club-family .scroll-container {
 section.mtcc-club-family .items {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll; /* Enable horizontal scrolling */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 section.mtcc-club-family .items::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  display: none;
 }
 
 section.mtcc-club-family .items .item {
   display: inline-block;
-  min-width: 200px; /* Ensure items have a minimum width */
-  flex: 0 0 auto; /* Prevents items from shrinking or growing */
-  margin-right: 100px; /* Optional: space between items */
+  min-width: 200px;
+  flex: 0 0 auto;
+  margin-right: 100px;
 }
 
-section.mtcc-club-family .items .item:nth-child(5n+1) h3 {
-  color: #D0407D;
+section.mtcc-club-family .items .item:nth-child(5n + 1) h3 {
+  color: #d0407d;
 }
 
-section.mtcc-club-family .items .item:nth-child(5n+2) h3 {
-  color: #57B1B6;
+section.mtcc-club-family .items .item:nth-child(5n + 2) h3 {
+  color: #57b1b6;
 }
 
-section.mtcc-club-family .items .item:nth-child(5n+3) h3 {
-  color: #A2BB2C;
+section.mtcc-club-family .items .item:nth-child(5n + 3) h3 {
+  color: #a2bb2c;
 }
 
-section.mtcc-club-family .items .item:nth-child(5n+4) h3 {
+section.mtcc-club-family .items .item:nth-child(5n + 4) h3 {
   color: #733888;
 }
 
-section.mtcc-club-family .items .item:nth-child(5n+5) h3 {
-  color: #E6C914;
+section.mtcc-club-family .items .item:nth-child(5n + 5) h3 {
+  color: #e6c914;
 }
 
 section.mtcc-club-family .items .item h3 {
@@ -2153,4 +2264,46 @@ section.mtcc-club-family .items .item h3 span {
   font-size: 80px;
   display: inline-block;
   vertical-align: middle; /* Aligns the numbers vertically */
+}
+
+section.call-to-action {
+  background: radial-gradient(
+    19.66% 70.25% at 25.86% 8.33%,
+    #733888 0%,
+    #592c6a 54.24%,
+    #452252 100%
+  );
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+section.call-to-action .left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+section.call-to-action .mt-heading {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 30px;
+}
+section.call-to-action .character {
+  max-width: 100%;
+  width: 320px;
+  margin-left: 50px;
+}
+section.call-to-action .mt-heading-2 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #fff;
+  text-align: left;
 }

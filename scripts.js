@@ -129,3 +129,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollContainer = document.querySelector('.scroll-container .items');
+    
+    // Retrieve the scroll position from local storage
+    const scrollPosition = localStorage.getItem('scrollPosition');
+    
+    // If a scroll position was saved, set the scroll position
+    if (scrollPosition) {
+      scrollContainer.scrollLeft = scrollPosition;
+    }
+
+    // Save the scroll position in local storage whenever it changes
+    scrollContainer.addEventListener('scroll', function() {
+      localStorage.setItem('scrollPosition', scrollContainer.scrollLeft);
+    });
+  });
