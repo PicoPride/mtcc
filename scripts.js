@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     centeredSlides: true,
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination main-slider-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: `.swiper-button-next`,
-      prevEl: `.swiper-button-prev`,
+      nextEl: `.main-slider-next`,
+      prevEl: `.main-slider-prev`,
     },
     breakpoints: {
       0: {
@@ -24,28 +24,28 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // var swiper = new Swiper(".like-slider", {
-  //   slidesPerView: 5,
-  //   cssMode: true,
-  //   spaceBetween: 10,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  //   breakpoints: {
-  //     0: {
-  //       slidesPerView: 1.2,
-  //       spaceBetween: 13,
-  //     },
-  //     768: {
-  //       slidesPerView: 5.2,
-  //     },
-  //   },
-  // });
+  var swiper = new Swiper(".like-slider", {
+    slidesPerView: 5,
+    cssMode: true,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".like-slider-button-next",
+      prevEl: ".like-slider-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        spaceBetween: 13,
+      },
+      768: {
+        slidesPerView: 5.2,
+      },
+    },
+  });
   
 
   
@@ -152,4 +152,29 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollContainer.addEventListener('scroll', function() {
       localStorage.setItem('scrollPosition', scrollContainer.scrollLeft);
     });
+  });
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const texts = document.querySelectorAll('.changing-text');
+    let index = 0;
+
+    // Initially show the first text
+    texts[index].classList.add('active');
+
+    function toggleText() {
+      // Hide the current active text
+      texts[index].classList.remove('active');
+
+      // Move to the next text index
+      index = (index + 1) % texts.length;
+
+      // Show the new active text after a short delay
+      setTimeout(() => {
+        texts[index].classList.add('active');
+      }, 100); // Adjust this delay to match your transition duration
+    }
+
+    setInterval(toggleText, 2500); // Toggle every 5 seconds (5000 milliseconds)
   });
