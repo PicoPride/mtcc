@@ -1,51 +1,53 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize .mySwiper
-  new Swiper(".mySwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 15,
-    centeredSlides: true,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination main-slider-pagination",
-      clickable: true,
+  // Initialize .mySwiper// Swiper instance for .mySwiper
+new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".main-slider-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".main-slider-next",
+    prevEl: ".main-slider-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 13,
     },
-    navigation: {
-      nextEl: `.main-slider-next`,
-      prevEl: `.main-slider-prev`,
+    768: {
+      slidesPerView: 1.1,
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 13,
-      },
-      768: {
-        slidesPerView: 1.1,
-      },
-    },
-  });
+  },
+});
 
-  var swiper = new Swiper(".like-slider", {
-    slidesPerView: 5,
-    cssMode: true,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+// Swiper instance for .like-slider
+new Swiper(".like-slider", {
+  slidesPerView: 5,
+  cssMode: true,
+  spaceBetween: 10,
+  pagination: {
+    el: ".like-slider-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".like-slider-button-next",
+    prevEl: ".like-slider-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+      spaceBetween: 13,
     },
-    navigation: {
-      nextEl: ".like-slider-button-next",
-      prevEl: ".like-slider-button-prev",
+    768: {
+      slidesPerView: 5.2,
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 1.2,
-        spaceBetween: 13,
-      },
-      768: {
-        slidesPerView: 5.2,
-      },
-    },
-  });
+  },
+});
+
   
 
   

@@ -2021,40 +2021,6 @@ section.explore-club .heading {
   line-height: 28px;
   text-align: center;
 }
-
-/* Mobile View */
-@media (max-width: 768px) {
-  section.explore-club {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .explore-club-container {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .explore-club .explore-card .explore-img {
-    max-width: 100%;
-    max-height: 150px;
-    object-fit: cover;
-  }
-
-  .explore-club .explore-card {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .explore-club-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .explore-club-container {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
-
 section.mtcc-club-family {
   background: #eef1f8;
   padding-top: 100px;
@@ -2160,6 +2126,10 @@ section.home-about-us .about-para {
   border-radius: 32px;
   font-size: 16px;
 }
+a.culture-tag:hover{
+  text-decoration: none;
+  color: #9865aa;
+}
 .about-row {
   display: flex;
   justify-content: space-between;
@@ -2255,9 +2225,31 @@ section.list-your-program::after {
   position: absolute;
   right: 0;
   bottom: -65%;
-  z-index: 1;
+  z-index: -1;
   opacity: 0.5;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section.mtcc-club-family p.large-para span {
   color: #fba01a;
@@ -2315,6 +2307,9 @@ section.mtcc-club-family .items .item h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 90px;
+}
+section.mtcc-club-family .items .item h3:not(span){
+  font-weight: 400;
 }
 
 section.mtcc-club-family .items .item h3 span {
@@ -2421,4 +2416,7 @@ a.resources-item-card-btn:hover {
   color: #fba01a;
   text-decoration: none;
   cursor: pointer;
+}
+.desktop-img{
+  display: none;
 }

@@ -78,7 +78,7 @@
     margin-bottom: 10px;
     max-width: 120px;
   }
-  .mb{
+  .mb {
     margin-bottom: 30px;
   }
   .our-services .icon-boxes .ic-box p {
@@ -160,8 +160,6 @@
     gap: 20px;
   }
 
-
-
   .our-services .icon-boxes .ic-box {
     max-width: 100%;
   }
@@ -222,7 +220,7 @@
     display: block;
     border: 1px solid #231e60;
     background: #fff;
-    padding:  8px;
+    padding: 8px;
     color: #231e60;
     font-size: 16px;
     border-radius: 16px;
@@ -233,7 +231,7 @@
     align-items: center;
     transition: all 0.4s ease;
   }
-  .desktop img{
+  .desktop img {
     max-width: 25px;
   }
   section.membership .container button.join.desktop img {
@@ -432,65 +430,230 @@
   section.membership-plan .box {
     flex-direction: column;
   }
-  section.membership-plan .right-content{
+  section.membership-plan .right-content {
     margin-left: 0;
     background: transparent;
     border: none;
     padding: 0;
   }
-  section.membership-plan .second-content{
+  section.membership-plan .second-content {
     background: #fff;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 15px;
     padding: 16px;
   }
-  section.membership-plan .box .second-content .first-point, section.membership-plan .box .second-content .second-point {
+  section.membership-plan .box .second-content .first-point,
+  section.membership-plan .box .second-content .second-point {
     row-gap: 15px;
   }
-  section.membership-plan h2.club{
+  section.membership-plan h2.club {
     font-size: 32px;
     font-weight: 500;
   }
-  section.membership-plan .box .second-content .points h3{
+  section.membership-plan .box .second-content .points h3 {
     font-size: 18px;
   }
-  section.membership-plan .box .first-content{
+  section.membership-plan .box .first-content {
     max-width: 100%;
   }
-  section.membership-plan p{
+  section.membership-plan p {
     font-size: 16px;
   }
-  section.membership-plan .box .first-content h2{
+  section.membership-plan .box .first-content h2 {
     font-size: 24px;
   }
   section.milestones .swiper {
     padding-top: 20px;
     padding-bottom: 0px;
+  }
+  .book-btn-mobile {
+    width: 55%;
+  }
+  .book-btn-mobile img {
+    max-width: 20px;
+  }
+  .our-services .icon-boxes {
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .our-services .icon-boxes .ic-box {
+    max-width: 45%;
+    gap: 10px;
+  }
+  .our-services .icon-boxes {
+    /* flex-direction: column; */
+    gap: 30px;
+  }
+  section.about-slider h2.slide-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .about-slider .swiper-slide {
+    row-gap: 10px;
+  }
+  .slider-box h3 {
+    font-size: 11px;
+  }
+  .about-slider .swiper-slide img {
+    max-width: 30px;
+  }
+  .slider-box {
+    padding: 7px 16px;
+    gap: 0;
+  }
+  .dets-1,
+  .dets-2,
+  .dets-3,
+  .dets-4 {
+    margin-bottom: 5px;
+  }
+  section.mtcc-club-family {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  section.mtcc-club-family p.club-para {
+    font-size: 16px;
+  }
+  section.mtcc-club-family .buttonWithPara h2 {
+    font-size: 32px;
+    line-height: 38px;
+    max-width: 100%;
+  }
+  section.mtcc-club-family p.large-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section.call-to-action {
+    padding: 40px 0;
+  }
+
+  section.call-to-action .mt-heading {
+    font-size: 16px;
+  }
+  section.call-to-action .mt-heading-2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  section.call-to-action .character {
+    width: 150px;
+    margin-left: 20px;
+  }
+  section.call-to-action .left-content {
+    row-gap: 0;
+  }
+  .anime-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktop-img {
+    display: block;
+  }
+  section.resources,
+  section.list-your-program,
+  section.home-about-us {
+    padding: 40px 0;
+  }
+  section.resources h2.section-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .resources-with-btn {
+    justify-content: center;
+  }
+  section.resources .resources-item-card-inner {
+    padding-top: 25px;
+  }
+  section.resources .resources-item-card-inner .resources-item-card-img img {
+    height: 180px;
+  }
+  .about-row {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+  .list-img {
+    width: 350px;
+  }
+  section.list-your-program .program-heading {
+    font-size: 16px;
+  }
+  section.list-your-program .program-long-heading {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  section.list-your-program .list-para {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  section.list-your-program::before {
+    content: none;
+  }
+  section.list-your-program::after {
+    content: none;
+  }
+  .about-sec-part .img-fluid {
+    margin: 0;
+  }
+  section.home-about-us .about-heading {
+    font-size: 16px;
+  }
+  section.home-about-us .about-long-heading {
+    font-size: 32px;
+    line-height: 38px;
 }
-.book-btn-mobile{
-  width: 55%;
+section.home-about-us .heading-btn{
+  align-items: flex-start;
+  flex-direction: column;
 }
-.book-btn-mobile img{
-  max-width: 20px;
+.about-sec-part .changing-text {
+  left: 40%;
+  font-size: 41px;
 }
-.our-services .icon-boxes {
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-.our-services .icon-boxes .ic-box {
-  max-width: 45%;
-  gap: 10px;
-}
-.our-services .icon-boxes {
-  /* flex-direction: column; */
-  gap: 30px;
-}
+section.home-about-us .about-para{
+  font-size: 16px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 @media (max-width: 576px) {
   .swiper-slide .slide-para {
@@ -617,6 +780,38 @@
     max-height: 230px;
     border-radius: 16px 16px 0 0;
   }
+  section.explore-club {
+    padding: 0;
+    padding-top: 40px;
+  }
+  section.explore-club .heading {
+    margin-bottom: 5px;
+  }
+  .explore-club-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .explore-club .explore-card .explore-img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+  }
+
+  .explore-club .explore-card {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .explore-club-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .explore-club-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
   section.about-event .map-card .map-card-footer h2 {
     font-size: 16px;
     line-height: 24px;
@@ -635,6 +830,7 @@
   section.you-may-like-slider .like-heading {
     text-align: center;
     margin-bottom: 20px;
+    color: #231e60;
   }
   .desktop-hide {
     display: flex;
@@ -642,5 +838,18 @@
   .price-1 h4,
   .price-2 h4 {
     width: 40%;
+  }
+  section.mtcc-club-family {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  section.mtcc-club-family p.club-para {
+    font-size: 16px;
+  }
+  section.mtcc-club-family .buttonWithPara h2 {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
