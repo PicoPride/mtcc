@@ -615,6 +615,7 @@ section.home-about-us .heading-btn{
 .about-sec-part .changing-text {
   left: 40%;
   font-size: 41px;
+  line-height: 35px;
 }
 section.home-about-us .about-para{
   font-size: 16px;
@@ -849,7 +850,7 @@ section.home-about-us .about-para{
     font-size: 16px;
   }
   section.mtcc-club-family .buttonWithPara h2 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 38px;
   }
 }
