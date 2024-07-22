@@ -623,7 +623,50 @@ section.home-about-us .about-para{
 
 
 
+section.mtcc-club-family .scroll-container {
+  overflow: visible;
+}
 
+section.mtcc-club-family .items {
+  flex-wrap: wrap;
+}
+section.mtcc-club-family .item-container {
+  padding-top: 10px;
+}
+
+section.mtcc-club-family .items .item {
+  flex: 0 0 45%; 
+  margin-right: 5%;
+  margin-bottom: 0;
+}
+section.mtcc-club-family .items .item h3{
+  font-size: 18px;
+  line-height: 24px;
+  text-wrap: wrap;
+}
+section.mtcc-club-family .items .item h3 span{
+  font-size: 24px;
+}
+
+section.mtcc-club-family .items .item{
+  min-width: 100%;
+}
+
+.about-sec-part{
+  padding-left: 0;
+}
+.about-sec-part .changing-text{
+  top: 40%;
+  left: 35%;
+}
+
+.drop-cap {
+  float: left;
+  font-size: 40px;
+  line-height: 1;
+  margin-right: 0.1em;
+  margin-top: 0.1em;
+}
 
 
 

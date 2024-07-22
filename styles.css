@@ -1943,6 +1943,8 @@ section.explore-club .heading {
   flex-direction: column;
   gap: 20px;
   transition: all 0.8s ease-out;
+  position: relative; 
+  z-index: 0;
 }
 
 .explore-club .explore-card:hover img {
@@ -1952,6 +1954,7 @@ section.explore-club .heading {
 .explore-club .explore-card:hover {
   border: 1px solid #000;
   border-radius: 12px;
+  margin: 0;
 }
 
 .explore-img {
@@ -2115,7 +2118,7 @@ section.home-about-us .about-para {
   transition: all 0.8s ease-in; 
 }
 .about-sec-part .changing-text.active {
-  opacity: 1; /* Show active changing-text */
+  opacity: 1; 
 }
 .about-sec-part .changing-text span {
   font-weight: 700;
@@ -2316,7 +2319,7 @@ section.mtcc-club-family .items .item h3 {
   font-weight: 700;
   line-height: 90px;
 }
-section.mtcc-club-family .items .item h3:not(span){
+section.mtcc-club-family .items .item h3 span{
   font-weight: 400;
 }
 
@@ -2441,4 +2444,13 @@ a.resources-item-card-btn:hover {
     flex: 0 0 50%; /* Take up 50% of the container's width */
     margin-right: 0; /* Remove right margin */
   }
+}
+
+
+.drop-cap {
+  float: left;
+  font-size: 40px;
+  line-height: 1;
+  margin-right: 0.1em;
+  margin-top: 0.1em;
 }
