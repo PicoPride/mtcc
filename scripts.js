@@ -180,3 +180,31 @@ new Swiper(".like-slider", {
 
     setInterval(toggleText, 2500); // Toggle every 5 seconds (5000 milliseconds)
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function showTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("content");
+    var tabs = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.remove("active");
+    }
+    for (i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+    }
+    document.getElementById(tabName).classList.add("active");
+    event.target.classList.add("active");
+}
