@@ -199,7 +199,7 @@ function showTab(tabName) {
 
 
   document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.querySelector('.hamburger');
+    const hamburger = document.querySelector('.hamburger .mobile-hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
     const closeMenu = document.querySelector('.close-menu');
   
