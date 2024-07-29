@@ -10,10 +10,65 @@
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
-    
-    <header>
-      <img src="./assets/imgs/Header.png" alt="" />
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-9 col-sm-9">
+            <div class="search-bar">
+              <form action="#">
+                <input type="text" class="form-control" placeholder="Search" />
+                <img src="./assets/imgs/ri_search-line.svg" alt="Search Icon" />
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-9 col-md-9 col-sm-9">
+            <nav class="nav justify-content-end">
+              <a href="about.html">About The Club</a>
+              <a href="#">Programmes</a>
+              <a href="#">Application Form</a>
+              <a href="#">Gallery</a>
+              <a href="#">Feedback</a>
+              <a href="contact-us.html">Contact Us</a>
+              <a href="join-the-club.html" class="join-btn">Join The Club</a>
+              <a href="#" class="login">Login</a>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
+    <div class="sub-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="logo">
+              <a href="#"> <img src="./assets/imgs/logo.png" alt="Logo" /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-9 second-menu">
+            <a href="join-the-club.html" class="col-md-auto active">List Your Show</a>
+            <a href="event-category.html" class="col-md-auto">Events</a>
+            <a href="#" class="col-md-auto">Workshops</a>
+            <a href="#" class="col-md-auto">Plays</a>
+            <a href="#" class="col-md-auto">Masterclass</a>
+            <a href="#" class="col-md-auto">Musical</a>
+            <a href="#" class="col-md-auto">Sports</a>
+            <a href="#" class="col-md-auto">Seminars</a>
+            <div class="dropdown">
+              <a href="#" class="col-md-auto">Others <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" /></a>
+              <div class="dropdown-menu" aria-labelledby="othersMenu">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
         
     <section class="banner-page-about">
       <div class="container">
@@ -340,9 +395,88 @@
         </div>
       </div>
     </section>
-
     <footer>
-      <img src="./assets/imgs/Footer.png" alt="" />
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 footer-first-item">
+            <img src="./assets/imgs/logo.png" alt="" class="logo" />
+            <p class="footer-text">
+              The MT Culture Club will empower, equip and enable its members to
+              lead more fulfilling lives, achieve their aspirations and do more
+              with their lives.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-second-item custom-width">
+            <h2 class="menu-heading">Quick Links</h2>
+            <ul class="menu-itmes">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Application Forms</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-third-item">
+            <h2 class="menu-heading">MTCC Categories</h2>
+            <div class="two-line-menu">
+              <ul class="menu-itmes">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Workshops</a></li>
+                <li><a href="#">Plays</a></li>
+                <li><a href="#">Masterclass</a></li>
+              </ul>
+              <ul class="menu-itmes">
+                <li><a href="#">Musical</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Seminars</a></li>
+                <li><a href="#">Others</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-fourth-item custom-width">
+            <h2 class="menu-heading">Support</h2>
+            <ul class="menu-itmes">
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-fifth-item custom-width">
+            <h2 class="menu-heading">Get Involved</h2>
+            <ul class="menu-itmes">
+              <li><a href="join-the-club.html">Join The Club</a></li>
+              <li><a href="./listYourPrograms.html">List Your Program</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-sixth-item custom-width">
+            <h2 class="menu-heading">Legal</h2>
+            <ul class="menu-itmes">
+              <li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="footer-seventh-item">
+              <h2 class="copyright-heading">
+                © 2024 Maharashtra Times Culture Club. All rights reserved.
+              </h2>
+              <div class="social-icons">
+                <a href="#"><img src="./assets/imgs/x.svg" alt="Twitter" /></a>
+
+                <a href="#"
+                  ><img src="./assets/imgs/linkedin.svg" alt="Linkedin"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/imgs/insta.svg" alt="Instagram"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/imgs/fb.svg" alt="Facebook"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="./assets/JS/swiper-bundle.min.js"></script>

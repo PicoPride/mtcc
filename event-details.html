@@ -10,9 +10,68 @@
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
-    <header>
-      <img src="./assets/imgs/Header.png" alt="" />
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-9 col-sm-9">
+            <div class="search-bar">
+              <form action="#">
+                <input type="text" class="form-control" placeholder="Search" />
+                <img src="./assets/imgs/ri_search-line.svg" alt="Search Icon" />
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-9 col-md-9 col-sm-9">
+            <nav class="nav justify-content-end">
+              <a href="about.html">About The Club</a>
+              <a href="#">Programmes</a>
+              <a href="#">Application Form</a>
+              <a href="#">Gallery</a>
+              <a href="#">Feedback</a>
+              <a href="contact-us.html">Contact Us</a>
+              <a href="join-the-club.html" class="join-btn">Join The Club</a>
+              <a href="#" class="login">Login</a>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
+    <div class="sub-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="logo">
+              <a href="#"> <img src="./assets/imgs/logo.png" alt="Logo" /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-9 second-menu">
+            <a href="join-the-club.html" class="col-md-auto active"
+              >List Your Show</a
+            >
+            <a href="event-category.html" class="col-md-auto">Events</a>
+            <a href="#" class="col-md-auto">Workshops</a>
+            <a href="#" class="col-md-auto">Plays</a>
+            <a href="#" class="col-md-auto">Masterclass</a>
+            <a href="#" class="col-md-auto">Musical</a>
+            <a href="#" class="col-md-auto">Sports</a>
+            <a href="#" class="col-md-auto">Seminars</a>
+            <div class="dropdown">
+              <a href="#" class="col-md-auto"
+                >Others
+                <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon"
+              /></a>
+              <div class="dropdown-menu" aria-labelledby="othersMenu">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="banner-page-event-details">
       <div class="container">
@@ -23,72 +82,82 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 event-card d-flex flex-wrap">
-            <div class="col-lg-6 p-0 left-img"></div>
-            <div
-              class="col-lg-6 event-details d-flex flex-column justify-content-between"
-            >
-              <div class="row item-1">
-                <div class="top-left-dets col-12 col-md-6">
-                  <div class="col-sm-6 col-md-12 pl-0">
-                    <div class="box-1 d-flex align-items-center">
-                      <img
-                        src="./assets/imgs/calendar.png"
-                        alt=""
-                        class="me-2"
-                      />
-                      <h4 class="date-time">Saturday 23 June 2024</h4>
+          <div class="col-12 flex-wrap">
+            <div class="event-card d-flex">
+              <div class="col-lg-6 p-0 left-img"></div>
+              <div
+                class="col-lg-6 event-details d-flex flex-column justify-content-between"
+              >
+                <div class="row item-1">
+                  <div class="top-left-dets col-12 col-md-6">
+                    <div class="col-sm-6 col-md-12 pl-0">
+                      <div class="box-1 d-flex align-items-center">
+                        <img
+                          src="./assets/imgs/calendar.png"
+                          alt=""
+                          class="me-2"
+                        />
+                        <h4 class="date-time">Saturday 23 June 2024</h4>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12 pl-0">
+                      <div class="box-2 d-flex align-items-center">
+                        <img
+                          src="./assets/imgs/clock.png"
+                          alt=""
+                          class="me-2"
+                        />
+                        <h4 class="date-time">6:00 PM</h4>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12 pl-0">
+                      <div class="box-3 d-flex align-items-center">
+                        <img
+                          src="./assets/imgs/location.png"
+                          alt=""
+                          class="me-2"
+                        />
+                        <h4 class="date-time">A DOT Pune by GNH, Pune</h4>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12 pl-0">
+                      <div class="box-4 d-flex mb-3 align-items-center">
+                        <img
+                          src="./assets/imgs/seats.png"
+                          alt=""
+                          class="me-2"
+                        />
+                        <h4 class="date-time">41 Seats Available</h4>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-12 pl-0">
-                    <div class="box-2 d-flex align-items-center">
-                      <img src="./assets/imgs/clock.png" alt="" class="me-2" />
-                      <h4 class="date-time">6:00 PM</h4>
+
+                  <div class="top-right-dets col-12 col-md-6">
+                    <div class="price-1 mb-3">
+                      <h4><span>₹ 350/-</span> For non-members</h4>
+                      <button class="book-btn book-btn-mobile">
+                        Book Now
+                        <img src="./assets/imgs/Arrow button.png" alt="" />
+                      </button>
+                      <!-- <a href="#" class="book-btn">Book Now <img src="./assets/imgs/Arrow button.png" alt=""></a> -->
                     </div>
-                  </div>
-                  <div class="col-sm-6 col-md-12 pl-0">
-                    <div class="box-3 d-flex align-items-center">
-                      <img
-                        src="./assets/imgs/location.png"
-                        alt=""
-                        class="me-2"
-                      />
-                      <h4 class="date-time">A DOT Pune by GNH, Pune</h4>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-12 pl-0">
-                    <div class="box-4 d-flex mb-3 align-items-center">
-                      <img src="./assets/imgs/seats.png" alt="" class="me-2" />
-                      <h4 class="date-time">41 Seats Available</h4>
+                    <div class="price-2 mb-3">
+                      <h4><span>₹ 240/-</span> For Members Only</h4>
+                      <button class="book-btn book-btn-mobile">
+                        Login and Book
+                        <img src="./assets/imgs/Arrow button.png" alt="" />
+                      </button>
                     </div>
                   </div>
                 </div>
 
-                <div class="top-right-dets col-12 col-md-6">
-                  <div class="price-1 mb-3">
-                    <h4><span>₹ 350/-</span> For non-members</h4>
-                    <button class="book-btn book-btn-mobile">
-                      Book Now
-                      <img src="./assets/imgs/Arrow button.png" alt="" />
-                    </button>
-                    <!-- <a href="#" class="book-btn">Book Now <img src="./assets/imgs/Arrow button.png" alt=""></a> -->
-                  </div>
-                  <div class="price-2 mb-3">
-                    <h4><span>₹ 240/-</span> For Members Only</h4>
-                    <button class="book-btn book-btn-mobile">
-                      Login and Book
-                      <img src="./assets/imgs/Arrow button.png" alt="" />
-                    </button>
-                  </div>
+                <div class="item-2">
+                  <p>To avail special deals and discounts, become a member</p>
+                  <button class="yello-button">
+                    Become a member
+                    <img src="./assets/imgs/Arrow button.png" alt="" />
+                  </button>
                 </div>
-              </div>
-
-              <div class="item-2">
-                <p>To avail special deals and discounts, become a member</p>
-                <button class="yello-button">
-                  Become a member
-                  <img src="./assets/imgs/Arrow button.png" alt="" />
-                </button>
               </div>
             </div>
           </div>
@@ -99,58 +168,53 @@
     <section class="about-event">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-md-8 contents">
-                <h2 class="main-heading">About Event</h2>
-                <p class="about-para">
-                  Beatae animi est rerum et dolorem nisi voluptatibus.
-                  Accusantium ex nemo. Et rerum hic est dignissimos dignissimos.
-                  Eaque laboriosam iste non sint officia. Explicabo libero
-                  earum.
-                </p>
-                <p class="about-para">
-                  Beatae animi est rerum et dolorem nisi voluptatibus.
-                  Accusantium ex nemo. Et rerum hic est dignissimos dignissimos.
-                  Eaque laboriosam iste non sint officia. Explicabo libero
-                  earum.Beatae animi est rerum et dolorem nisi voluptatibus.
-                  Accusantium ex nemo. Et rerum hic est dignissimos dignissimos.
-                  Eaque laboriosam iste non sint officia. Explicabo libero
-                  earum.Beatae animi est rerum et dolorem nisi voluptatibus.
-                  Accusantium ex nemo. Et rerum hic est dignissimos dignissimos.
-                  Eaque laboriosam iste non sint officia. Explicabo libero
-                  earum.
-                </p>
-                <p class="about-para">
-                  Beatae animi est rerum et dolorem nisi voluptatibus.
-                  Accusantium ex nemo. Et rerum hic est dignissimos dignissimos.
-                  Eaque laboriosam iste non sint officia. Explicabo libero
-                  earum.Beatae animi est rerum et dolorem nisi voluptatibus.
-                  Accusantium ex nemo. Et rerum hic est dignissimos dignissimos.
-                  Eaque laboriosam iste non sint officia. Explicabo libero
-                  earum.Beatae animi est rerum et dolorem nisi voluptatibus.
-                  Accusantium ex nemo. Et rerum hic est dignissimos dignissimos.
-                  Eaque laboriosam iste non sint officia. Explicabo libero
-                  earum.
-                </p>
-              </div>
-              <div class="col-md-4 mb">
-                <div class="map-card">
-                  <div class="map-card-header">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11914.250602999704!2d77.09777358161496!3d28.524973464910328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c0f00aef065%3A0xc27aa41eee81c915!2sShiv%20Murti%20(NH-8)!5e0!3m2!1sen!2sin!4v1721107972503!5m2!1sen!2sin"
-                      width="100%"
-                      height="300"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                  <div class="map-card-footer">
-                    <h2>Pune</h2>
-                    <p>National Highway - 8, Near Shiv Murti, Rajokri, Pune.</p>
-                  </div>
+          <div class="col-lg-12 map-content">
+            <div class="col-lg-8 contents">
+              <h2 class="main-heading">About Event</h2>
+              <p class="about-para">
+                Beatae animi est rerum et dolorem nisi voluptatibus. Accusantium
+                ex nemo. Et rerum hic est dignissimos dignissimos. Eaque
+                laboriosam iste non sint officia. Explicabo libero earum.
+              </p>
+              <p class="about-para">
+                Beatae animi est rerum et dolorem nisi voluptatibus. Accusantium
+                ex nemo. Et rerum hic est dignissimos dignissimos. Eaque
+                laboriosam iste non sint officia. Explicabo libero earum.Beatae
+                animi est rerum et dolorem nisi voluptatibus. Accusantium ex
+                nemo. Et rerum hic est dignissimos dignissimos. Eaque laboriosam
+                iste non sint officia. Explicabo libero earum.Beatae animi est
+                rerum et dolorem nisi voluptatibus. Accusantium ex nemo. Et
+                rerum hic est dignissimos dignissimos. Eaque laboriosam iste non
+                sint officia. Explicabo libero earum.
+              </p>
+              <p class="about-para">
+                Beatae animi est rerum et dolorem nisi voluptatibus. Accusantium
+                ex nemo. Et rerum hic est dignissimos dignissimos. Eaque
+                laboriosam iste non sint officia. Explicabo libero earum.Beatae
+                animi est rerum et dolorem nisi voluptatibus. Accusantium ex
+                nemo. Et rerum hic est dignissimos dignissimos. Eaque laboriosam
+                iste non sint officia. Explicabo libero earum.Beatae animi est
+                rerum et dolorem nisi voluptatibus. Accusantium ex nemo. Et
+                rerum hic est dignissimos dignissimos. Eaque laboriosam iste non
+                sint officia. Explicabo libero earum.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <div class="map-card">
+                <div class="map-card-header">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11914.250602999704!2d77.09777358161496!3d28.524973464910328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c0f00aef065%3A0xc27aa41eee81c915!2sShiv%20Murti%20(NH-8)!5e0!3m2!1sen!2sin!4v1721107972503!5m2!1sen!2sin"
+                    width="100%"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="map-card-footer">
+                  <h2>Pune</h2>
+                  <p>National Highway - 8, Near Shiv Murti, Rajokri, Pune.</p>
                 </div>
               </div>
             </div>
@@ -384,7 +448,87 @@
     </section>
 
     <footer>
-      <img src="./assets/imgs/Footer.png" alt="" />
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 footer-first-item">
+            <img src="./assets/imgs/logo.png" alt="" class="logo" />
+            <p class="footer-text">
+              The MT Culture Club will empower, equip and enable its members to
+              lead more fulfilling lives, achieve their aspirations and do more
+              with their lives.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-second-item custom-width">
+            <h2 class="menu-heading">Quick Links</h2>
+            <ul class="menu-itmes">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Application Forms</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-third-item">
+            <h2 class="menu-heading">MTCC Categories</h2>
+            <div class="two-line-menu">
+              <ul class="menu-itmes">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Workshops</a></li>
+                <li><a href="#">Plays</a></li>
+                <li><a href="#">Masterclass</a></li>
+              </ul>
+              <ul class="menu-itmes">
+                <li><a href="#">Musical</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Seminars</a></li>
+                <li><a href="#">Others</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-fourth-item custom-width">
+            <h2 class="menu-heading">Support</h2>
+            <ul class="menu-itmes">
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-fifth-item custom-width">
+            <h2 class="menu-heading">Get Involved</h2>
+            <ul class="menu-itmes">
+              <li><a href="join-the-club.html">Join The Club</a></li>
+              <li><a href="./listYourPrograms.html">List Your Program</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-sixth-item custom-width">
+            <h2 class="menu-heading">Legal</h2>
+            <ul class="menu-itmes">
+              <li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="footer-seventh-item">
+              <h2 class="copyright-heading">
+                © 2024 Maharashtra Times Culture Club. All rights reserved.
+              </h2>
+              <div class="social-icons">
+                <a href="#"><img src="./assets/imgs/x.svg" alt="Twitter" /></a>
+
+                <a href="#"
+                  ><img src="./assets/imgs/linkedin.svg" alt="Linkedin"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/imgs/insta.svg" alt="Instagram"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/imgs/fb.svg" alt="Facebook"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="./assets/JS/swiper-bundle.min.js"></script>

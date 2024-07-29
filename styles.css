@@ -212,7 +212,7 @@ footer img {
 section.about-slider {
   width: 100%;
   height: 500px;
-  padding: 50px 0;
+  padding: 20px 0;
   /* padding: 100px 140px; */
   margin-bottom: 80px;
 }
@@ -1079,7 +1079,8 @@ section.mtcc-club-family,
 section.call-to-action,
 section.home-about-us,
 section.resources,
-section.list-your-program {
+section.list-your-program,
+header.header, .sub-nav {
   /* padding: 20px 100px 0px 100px; */
   padding: 40px 40px;
 }
@@ -1438,7 +1439,7 @@ section.banner-page-event-details .left-img {
   max-width: 70%;
   margin-left: 10px;
 }
-button.yello-button {
+.yello-button {
   padding: 14px 16px;
   background: #fba01a;
   border: none;
@@ -1539,6 +1540,12 @@ section.about-event .about-para {
 }
 section.about-event .contents {
   padding-right: 70px;
+}
+.col-lg-12.map-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 section.about-event .map-card {
   /* height: 100%; */
@@ -2105,12 +2112,11 @@ section.home-about-us .about-para {
   width: 420px;
   max-width: 100%;
   position: relative;
-  margin-left: 50px;
 }
 .about-sec-part .changing-text {
   position: absolute;
   top: 35%;
-  left: 50%;
+  left: 40%;
   font-size: 45px;
   color: #231e60;
   max-width: 30%;
@@ -2132,6 +2138,7 @@ section.home-about-us .about-para {
   flex-direction: column;
   justify-content: flex-start;
   row-gap: 15px;
+  padding-right: 70px;
 }
 .culture-tag {
   color: #9865aa;
@@ -2139,6 +2146,7 @@ section.home-about-us .about-para {
   padding: 10px;
   border-radius: 32px;
   font-size: 16px;
+  pointer-events: none;
 }
 a.culture-tag:hover {
   text-decoration: none;
@@ -2270,9 +2278,9 @@ section.mtcc-club-family .items::-webkit-scrollbar {
 
 section.mtcc-club-family .items .item {
   display: inline-block;
-  min-width: 200px;
+  max-width: 300px;
   flex: 0 0 auto;
-  margin-right: 100px;
+  margin-right: 30px;
 }
 
 section.mtcc-club-family .items .item:nth-child(5n + 1) h3 {
@@ -2298,7 +2306,8 @@ section.mtcc-club-family .items .item:nth-child(5n + 5) h3 {
 section.mtcc-club-family .items .item h3 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 90px;
+  line-height: 30px;
+  text-wrap: wrap;
 }
 section.mtcc-club-family .items .item h3 span {
   font-weight: 400;
@@ -2342,7 +2351,7 @@ section.call-to-action .mt-heading {
 section.call-to-action .character {
   max-width: 100%;
   width: 320px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 section.call-to-action .mt-heading-2 {
   font-size: 54px;
@@ -2350,6 +2359,7 @@ section.call-to-action .mt-heading-2 {
   line-height: 60px;
   color: #fff;
   text-align: left;
+  max-width: 90%;
 }
 .resources-with-btn {
   display: flex;
@@ -2575,7 +2585,7 @@ footer {
   background: #fafafa;
   /* padding-top: 60px;
   padding-bottom: 0; */
-  padding: 60px 20px 0 20px;
+  padding: 60px 40px 0 40px;
   border-top: 1px solid #231e60;
 }
 .footer-first-item {
@@ -2631,7 +2641,8 @@ ul.menu-itmes li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid #231e60;
 }
 .social-icons {
@@ -2647,4 +2658,290 @@ h2.copyright-heading {
   font-size: 16px;
   font-weight: 600;
   color: #231e60;
+}
+
+section.mtcc-club-family .scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+section.mtcc-club-family .items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+section.mtcc-club-family .items .item {
+  display: inline-flex;
+  align-items: center; /* Center vertically */
+  max-width: 350px;
+  flex: 1 0 auto;
+  margin-right: 70px;
+}
+
+section.mtcc-club-family .items .item:last-child {
+  margin-right: 0;
+}
+
+section.mtcc-club-family .items .item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  display: flex;
+  align-items: center; /* Center vertically within the h3 */
+  /* white-space: nowrap; */
+}
+
+section.mtcc-club-family .items .item h3 span {
+  font-size: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust as needed for spacing between drop cap and text */
+}
+
+/* Header Section */
+.header.header {
+  background-color: #231e60;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col-lg-9.second-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .search-bar {
+  display: flex;
+  align-items: center;
+}
+.header .search-bar input {
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 10px;
+  padding-left: 30px;
+  border: 1px solid #e4e4e4;
+  max-width: 100%;
+}
+.search-bar input::placeholder {
+  color: #4f4b80;
+  font-size: 14px;
+  font-weight: 400;
+}
+.header .nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header .nav a.join-btn {
+  color: #231e60;
+  background: #fba01a;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+.col-lg-9.second-menu a {
+  color: #231e60;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header .nav a.login {
+  border: 1px solid #fba01a;
+  color: #ffb300;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+}
+.logo img {
+  height: 70px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+  border-top: 1px solid #eee;
+}
+.sub-nav a {
+  color: #1e0a57;
+  text-decoration: none;
+  font-size: 14px;
+}
+.sub-nav a.active {
+  background-color: #1e0a57;
+  color: #fff;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.search-bar {
+  position: relative;
+}
+.search-bar input {
+  border-radius: 20px;
+  padding: 5px 10px 5px 35px;
+  outline: none;
+}
+.search-bar img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.sub-nav {
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+  width: 100%;
+}
+
+.second-menu .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.second-menu .dropdown-toggle {
+  cursor: pointer;
+}
+
+.second-menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.second-menu .dropdown-menu a {
+  color: #231E60;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.second-menu .dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.second-menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive styles */
+.hamburger {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #231e60;
+  z-index: 2000;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  padding-left: 25px;
+}
+
+.mobile-menu.open {
+  display: flex;
+  height: 100%;
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  margin-top: 60px; /* Adjust based on your header height */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+
+@media (max-width: 992px) {
+  .header .nav, .sub-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  .header .search-bar{
+    display: none
+  }
+
+  .mobile-menu.show {
+    display: flex;
+    background: #fff;
+  }
+  .header.header{
+    background: #fff;
+  }
+  .mobile-menu .mobile-nav a{
+    color: #231E60;
+  }
 }

@@ -7,12 +7,96 @@
     <link rel="stylesheet" href="./assets/CSS/Bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/CSS/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css" />
+
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
-    <header>
-      <img src="./assets/imgs/Header.png" alt="" />
+
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-9 col-sm-9">
+            <div class="search-bar">
+              <form action="#">
+                <input type="text" class="form-control" placeholder="Search" />
+                <img src="./assets/imgs/ri_search-line.svg" alt="Search Icon" />
+              </form>
+            </div>
+          </div>
+    
+          <div class="col-lg-9 col-md-9 col-sm-9">
+            <nav class="nav justify-content-end">
+              <a href="about.html">About The Club</a>
+              <a href="#">Programmes</a>
+              <a href="#">Application Form</a>
+              <a href="#">Gallery</a>
+              <a href="#">Feedback</a>
+              <a href="contact-us.html">Contact Us</a>
+              <a href="join-the-club.html" class="join-btn">Join The Club</a>
+              <a href="#" class="login">Login</a>
+            </nav>
+          </div>
+    
+          <div class="hamburger">
+            <img src="./assets/imgs/breadcrumb.svg" alt="Menu Icon" />
+          </div>
+        </div>
+      </div>
     </header>
+    <div class="sub-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="logo">
+              <a href="#"><img src="./assets/imgs/logo.png" alt="Logo" /></a>
+            </div>
+          </div>
+    
+          <div class="col-lg-9 second-menu">
+            <a href="join-the-club.html" class="col-md-auto active">List Your Show</a>
+            <a href="event-category.html" class="col-md-auto">Events</a>
+            <a href="#" class="col-md-auto">Workshops</a>
+            <a href="#" class="col-md-auto">Plays</a>
+            <a href="#" class="col-md-auto">Masterclass</a>
+            <a href="#" class="col-md-auto">Musical</a>
+            <a href="#" class="col-md-auto">Sports</a>
+            <a href="#" class="col-md-auto">Seminars</a>
+            <div class="dropdown">
+              <a href="#" class="col-md-auto">Others
+                <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" />
+              </a>
+              <div class="dropdown-menu" aria-labelledby="othersMenu">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <div class="close-menu">
+        <img src="./assets/imgs/close.svg" alt="Close Icon" />
+      </div>
+      <nav class="mobile-nav">
+        <a href="about.html">About The Club</a>
+        <a href="#">Programmes</a>
+        <a href="#">Application Form</a>
+        <a href="#">Gallery</a>
+        <a href="#">Feedback</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="join-the-club.html" class="join-btn">Join The Club</a>
+        <!-- <a href="#" class="login">Login</a> -->
+      </nav>
+    </div>
+    
+    
+
+
+
+
     <!-- Slider Section Start Here -->
     <section class="about-slider">
       <div class="container-fluid">
@@ -184,7 +268,7 @@
               <div class="col-md-6 button-side">
                 <a href="#" class="book-btn mobile">
                   Explore More
-                  <img src="./assets/imgs/Arrow button.png" alt="" />
+                  <img src="./assets/imgs/Arrow-button.svg" alt="" />
                 </a>
               </div>
             </div>
@@ -572,6 +656,7 @@
           </div>
         </div>
       </div>
+
       <div class="container item-container">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -1051,20 +1136,24 @@
         </div>
 
         <div class="row">
-          <div class="col-12 col-md-12 col-lg-12 footer-seventh-item">
-            <h2 class="copyright-heading">
-              © 2024 Maharashtra Times Culture Club. All rights reserved.
-            </h2>
-            <div class="social-icons">
-              <a href="#"><img src="./assets/imgs/x.svg" alt="Twitter" /></a>
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="footer-seventh-item">
+              <h2 class="copyright-heading">
+                © 2024 Maharashtra Times Culture Club. All rights reserved.
+              </h2>
+              <div class="social-icons">
+                <a href="#"><img src="./assets/imgs/x.svg" alt="Twitter" /></a>
 
-              <a href="#"
-                ><img src="./assets/imgs/linkedin.svg" alt="Linkedin"
-              /></a>
-              <a href="#"
-                ><img src="./assets/imgs/insta.svg" alt="Instagram"
-              /></a>
-              <a href="#"><img src="./assets/imgs/fb.svg" alt="Facebook" /></a>
+                <a href="#"
+                  ><img src="./assets/imgs/linkedin.svg" alt="Linkedin"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/imgs/insta.svg" alt="Instagram"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/imgs/fb.svg" alt="Facebook"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
