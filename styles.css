@@ -1675,7 +1675,7 @@ section.you-may-like-slider .like-heading {
 }
 .may-like-slider .swiper-button-next,
 .may-like-slider .swiper-button-prev {
-  top: 35%;
+  top: 50%;
 }
 .may-like-slider .swiper-button-next {
   right: -40px;
@@ -2306,7 +2306,7 @@ section.mtcc-club-family .items .item:nth-child(5n + 5) h3 {
 }
 
 section.mtcc-club-family .items .item h3 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 30px;
   text-wrap: wrap;
@@ -3178,7 +3178,7 @@ h2.host-event-title {
 .host-img {
   width: 100%;
   max-width: 300px;
-  height: 250px;
+  height: 420px;
   object-fit: cover;
   border-radius: 8px;
   transition: all 0.8s ease-out;
