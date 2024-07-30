@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
+     
     <header class="header">
       <div class="container">
         <div class="row">
@@ -33,6 +34,21 @@
               <a href="#" class="login">Login</a>
             </nav>
           </div>
+
+          <div class="hamburger">
+            <img
+              class="mobile-search-bar"
+              src="./assets/imgs/ri_search-line.svg"
+              alt=""
+            />
+            <img class="mobile-logo" src="/assets/imgs/logo.png" alt="" />
+            <img
+              class="mobile-hamburger"
+              src="./assets/imgs/breadcrumb.svg"
+              alt="Menu Icon"
+            />
+            <!-- <img class="mobile-close" src="./assets/imgs/close.svg" alt="Close Icon" /> -->
+          </div>
         </div>
       </div>
     </header>
@@ -41,12 +57,14 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="logo">
-              <a href="#"> <img src="./assets/imgs/logo.png" alt="Logo" /></a>
+              <a href="#"><img src="./assets/imgs/logo.png" alt="Logo" /></a>
             </div>
           </div>
 
           <div class="col-lg-9 second-menu">
-            <a href="join-the-club.html" class="col-md-auto active">List Your Show</a>
+            <a href="join-the-club.html" class="col-md-auto active"
+              >List Your Show</a
+            >
             <a href="event-category.html" class="col-md-auto">Events</a>
             <a href="#" class="col-md-auto">Workshops</a>
             <a href="#" class="col-md-auto">Plays</a>
@@ -55,7 +73,10 @@
             <a href="#" class="col-md-auto">Sports</a>
             <a href="#" class="col-md-auto">Seminars</a>
             <div class="dropdown">
-              <a href="#" class="col-md-auto">Others <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" /></a>
+              <a href="#" class="col-md-auto"
+                >Others
+                <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" />
+              </a>
               <div class="dropdown-menu" aria-labelledby="othersMenu">
                 <a class="dropdown-item" href="#">Item 1</a>
                 <a class="dropdown-item" href="#">Item 2</a>
@@ -63,10 +84,37 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
+    </div>
+    <div class="mobile-menu">
+      <nav class="mobile-nav">
+            <a href="join-the-club.html" class="col-md-auto active"
+              >List Your Show</a
+            >
+            <a href="event-category.html" class="col-md-auto">Events</a>
+            <a href="#" class="col-md-auto">Workshops</a>
+            <a href="#" class="col-md-auto">Plays</a>
+            <a href="#" class="col-md-auto">Masterclass</a>
+            <a href="#" class="col-md-auto">Musical</a>
+            <a href="#" class="col-md-auto">Sports</a>
+            <a href="#" class="col-md-auto">Seminars</a>
+            <div class="dropdown">
+              <a href="#" class="col-md-auto"
+                >Others
+                <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" />
+              </a>
+              <div class="dropdown-menu" aria-labelledby="othersMenu">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </div>
+        <div class="login-join">
+          <a href="join-the-club.html" class="join-btn">Join The Club</a>
+          <a href="#" class="login">Login</a>
+        </div>
+      </nav>
     </div>
 
     <section class="banner-page-jtc">
@@ -303,5 +351,8 @@
       </div>
     </footer>
     
+
+
+    <script src="scripts.js"></script>
   </body>
 </html>

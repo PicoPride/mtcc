@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize .mySwiper// Swiper instance for .mySwiper
+  
   new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 15,
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.25,
         spaceBetween: 13,
       },
       768: {
@@ -179,8 +179,7 @@ function showTab(tabName) {
 
 
 
-
-
+// Code for adding and removing active class based on the current url
   document.addEventListener("DOMContentLoaded", function() {
     var menuItems = document.querySelectorAll('.second-menu a');
     var currentUrl = window.location.pathname.split("/").pop();
@@ -198,16 +197,57 @@ function showTab(tabName) {
 
 
 
+
+// Code for Menu in Mobile
+
   document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.querySelector('.hamburger .mobile-hamburger');
+    const hamburgerContainer = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
-    const closeMenu = document.querySelector('.close-menu');
+    const closeMenuIcon = document.querySelector('.close-menu img');
   
-    hamburger.addEventListener('click', function() {
+    function toggleMenu() {
+      const isMenuOpen = mobileMenu.classList.contains('show');
+      
+      if (isMenuOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    }
+  
+    function openMenu() {
       mobileMenu.classList.add('show');
+      mobileMenu.classList.remove('hide');
+      hamburgerContainer.classList.add('cross');
+    }
+  
+    function closeMenu() {
+      mobileMenu.classList.remove('show');
+      mobileMenu.classList.add('hide');
+      hamburgerContainer.classList.remove('cross');
+    }
+  
+    // Toggle menu on hamburger click
+    hamburgerContainer.addEventListener('click', toggleMenu);
+    
+    // Close menu on close icon click
+    if (closeMenuIcon) {
+      closeMenuIcon.addEventListener('click', closeMenu);
+    }
+  
+    // Close the menu when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!mobileMenu.contains(event.target) && 
+          !hamburgerContainer.contains(event.target)) {
+        closeMenu();
+      }
     });
   
-    closeMenu.addEventListener('click', function() {
-      mobileMenu.classList.remove('show');
+    // Close the menu on scroll if open
+    window.addEventListener('scroll', function() {
+      if (mobileMenu.classList.contains('show')) {
+        closeMenu();
+      }
     });
   });
+  

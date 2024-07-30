@@ -39,7 +39,7 @@
     position: relative;
   }
   section.privacy {
-    padding: 40px 16px;
+    padding: 40px 0px;
   }
   section.privacy .container .contents {
     max-width: 100%;
@@ -87,16 +87,13 @@
     font-size: 14px;
     line-height: 20px;
   }
-  section.privacy {
-    padding: 40px 16px;
-  }
   section.privacy .container .all-contents p,
   section.privacy .container .all-contents h2,
   section.privacy .container .all-contents li {
     font-size: 16px;
   }
   .about-slider .swiper-slide {
-    width: 90%;
+    /* width: 96%; */
     height: 400px;
     padding: 20px;
     display: flex;
@@ -104,7 +101,7 @@
     justify-content: flex-end;
   }
   section.about-slider {
-    padding: 20px;
+    /* padding: 20px; */
     margin-bottom: 0px;
   }
   section.about-slider {
@@ -251,7 +248,7 @@
   section.banner-page-jtc,
   section.banner-page-contact,
   section.banner-page-about {
-    padding: 0;
+    padding: 20px 0;
   }
   section.main-content {
     padding: 0;
@@ -491,19 +488,20 @@
   section.about-slider h2.slide-heading {
     font-size: 24px;
     line-height: 32px;
+    font-weight: 400;
   }
   .about-slider .swiper-slide {
     row-gap: 10px;
   }
   .slider-box h3 {
-    font-size: 11px;
+    font-size: 10px;
   }
   .about-slider .swiper-slide img {
-    max-width: 30px;
+    max-width: 20px;
   }
   .slider-box {
-    padding: 7px 16px;
-    gap: 0;
+    padding: 7px 11px;
+    gap: 8px;
   }
   .dets-1,
   .dets-2,
@@ -643,7 +641,7 @@
     text-wrap: wrap;
   }
   section.mtcc-club-family .items .item h3 span {
-    font-size: 24px;
+    font-size: 38px;
   }
 
   section.mtcc-club-family .items .item {
@@ -691,12 +689,12 @@
     padding: 8px 16px;
     font-size: 16px;
   }
-  .tab{
+  .tab {
     font-size: 16px;
   }
   .tab:first-child {
     border-radius: 27px;
-}
+  }
   section.you-may-like-slider.coming-events {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -708,35 +706,53 @@
   .tabs {
     margin-bottom: 40px;
   }
+  .about-first-part {
+    padding-right: 15px;
+  }
+  section.explore-club .heading {
+    margin-bottom: 15px;
+  }
+  .about-sec-part .img-fluid {
+    width: 300px;
+  }
+  .about-sec-part {
+    justify-content: center;
+  }
 
+  .testimonials .swiper-slide {
+    padding: 20px 15px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  footer {
+    padding: 20px 10px;
+    padding-bottom: 5px;
+  }
+  .footer-first-item img {
+    max-width: 80%;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  .col-lg-2.custom-width {
+    max-width: 50%;
+  }
+  h2.copyright-heading {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.footer-seventh-item{
+  gap: 10px;
+  padding-bottom: 0;
+}
+.social-icons img {
+  width: 15px;
+}
+footer .row:first-child{
+  flex-wrap:wrap;
+}
+.top-left-dets{
+  row-gap: 5px;
+}
 
 
 
@@ -876,12 +892,17 @@
   }
   section.banner-page-event-details .event-card {
     padding: 12px;
+    flex-wrap: wrap;
   }
   section.about-event {
-    padding: 40px 15px 0 15px;
+    padding: 40px 0px 0 0px;
+    
   }
   section.about-event .contents {
-    padding-right: 0;
+    padding: 0;
+  }
+  section.about-event .map-card{
+    margin-bottom: 25px;
   }
   .map-card-header iframe {
     max-height: 230px;
@@ -891,9 +912,7 @@
     padding: 0;
     padding-top: 40px;
   }
-  section.explore-club .heading {
-    margin-bottom: 5px;
-  }
+
   .explore-club-container {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -918,6 +937,7 @@
   .explore-club-container {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    justify-content: flex-start;
   }
   section.about-event .map-card .map-card-footer h2 {
     font-size: 16px;
@@ -959,4 +979,46 @@
     font-size: 30px;
     line-height: 38px;
   }
+  .explore-title {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .explore-club .explore-card {
+    gap: 10px;
+    margin: 0;
+  }
+
+  .col-lg-12.map-content{
+    flex-wrap: wrap;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
