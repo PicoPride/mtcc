@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   
   new Swiper(".mySwiper", {
@@ -199,55 +202,114 @@ function showTab(tabName) {
 
 
 // Code for Menu in Mobile
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburgerContainer = document.querySelector('.mobile-hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeMenuIcon = document.querySelector('.close-menu img');
+  const hamburgerIcon = document.querySelector('.mobile-hamburger');
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const hamburgerContainer = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const closeMenuIcon = document.querySelector('.close-menu img');
-  
-    function toggleMenu() {
-      const isMenuOpen = mobileMenu.classList.contains('show');
-      
-      if (isMenuOpen) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
+  function toggleMenu() {
+    const isMenuOpen = mobileMenu.classList.contains('show');
+
+    if (isMenuOpen) {
+      closeMenu();
+    } else {
+      openMenu();
     }
-  
-    function openMenu() {
-      mobileMenu.classList.add('show');
-      mobileMenu.classList.remove('hide');
-      hamburgerContainer.classList.add('cross');
+  }
+
+  function openMenu() {
+    mobileMenu.classList.add('show');
+    mobileMenu.classList.remove('hide');
+    hamburgerContainer.classList.add('cross');
+    hamburgerIcon.src = "./assets/imgs/close.svg"; // Update with the path to the close icon image
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.remove('show');
+    mobileMenu.classList.add('hide');
+    hamburgerContainer.classList.remove('cross');
+    hamburgerIcon.src = "./assets/imgs/breadcrumb.svg"; // Update with the path to the hamburger icon image
+  }
+
+  // Toggle menu on hamburger click
+  hamburgerContainer.addEventListener('click', toggleMenu);
+
+  // Close menu on close icon click
+  if (closeMenuIcon) {
+    closeMenuIcon.addEventListener('click', closeMenu);
+  }
+
+  // Close the menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!mobileMenu.contains(event.target) && 
+        !hamburgerContainer.contains(event.target)) {
+      closeMenu();
     }
-  
-    function closeMenu() {
-      mobileMenu.classList.remove('show');
-      mobileMenu.classList.add('hide');
-      hamburgerContainer.classList.remove('cross');
-    }
-  
-    // Toggle menu on hamburger click
-    hamburgerContainer.addEventListener('click', toggleMenu);
-    
-    // Close menu on close icon click
-    if (closeMenuIcon) {
-      closeMenuIcon.addEventListener('click', closeMenu);
-    }
-  
-    // Close the menu when clicking outside
-    document.addEventListener('click', function(event) {
-      if (!mobileMenu.contains(event.target) && 
-          !hamburgerContainer.contains(event.target)) {
-        closeMenu();
-      }
-    });
-  
-    // Close the menu on scroll if open
-    window.addEventListener('scroll', function() {
-      if (mobileMenu.classList.contains('show')) {
-        closeMenu();
-      }
-    });
   });
+
+  // Close the menu on scroll if open
+  window.addEventListener('scroll', function() {
+    if (mobileMenu.classList.contains('show')) {
+      closeMenu();
+    }
+  });
+});
+
   
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const numbersContainer = document.querySelector('.numbers');
+  const numbers = Array.from(numbersContainer.querySelectorAll('h2'));
+  const rightHostCardContainer = document.querySelector('.right-host-card');
+  const rightHostCards = Array.from(rightHostCardContainer.querySelectorAll('.host-card'));
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+  let currentIndex = 0;
+  const visibleCount = 4;
+  function updateVisibleItems() {
+    // Update numbers visibility
+    numbers.forEach((number, index) => {
+      number.style.display = (index >= currentIndex && index < currentIndex + visibleCount) ? 'block' : 'none';
+    });
+
+    // Scroll the host cards container
+    const cardWidth = rightHostCards[0].offsetWidth + 20; // 20 is the margin-right
+    rightHostCardContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+
+  leftArrow.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= visibleCount;
+      updateVisibleItems();
+    }
+  });
+
+  rightArrow.addEventListener('click', () => {
+    if (currentIndex + visibleCount < numbers.length) {
+      currentIndex += visibleCount;
+      updateVisibleItems();
+    }
+  });
+
+  updateVisibleItems(); // Initial call to set visible items
+});
+
+// Application form upload Support
+
+document.getElementById('uploadDocument').addEventListener('click', function() {
+  document.getElementById('fileInput').click();
+});
+
+document.getElementById('fileInput').addEventListener('change', function(event) {
+  const file = event.target.files[0];
+  if (file) {
+    console.log('File selected:', file.name);
+    
+  }
+});
+
+
+
