@@ -1,117 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="./assets/CSS/Bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="responsive.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./assets/CSS/Bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
 
+<body>
 
-    <section class="login">
-  <div class="container-fluid">
-    <div class="row h-100">
-      <div class="col-md-6 left-panel">
-        <div class=" login-parent">
-          <div class="logo-box">
-            <a href="index.html"><img src="./assets/imgs/logo.png" alt="Logo" class="login-logo" /></a>
-          </div>
-
-          <!-- Login Fields Start -->
-          <div id="login-box">
-            <h2 class="login-text">Log in</h2>
-            <p class="welcome-text">Welcome back! Please enter your details.</p>
-            <form>
-              <div class="form-group">
-                <label for="email">Email*</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
-              </div>
-              <div class="form-group">
-                <label for="password">Password*</label>
-                <input type="password" class="form-control" id="current-password" placeholder="********" required />
-              </div>
-              <div class="form-group text-right">
-                <a class="forgot-pass" href="#">Forgot Password</a>
-              </div>
-              <button type="submit" class="btn btn-login">Login</button>
-              <div class="form-group mt-3">
-                <p class="new-user">
-                  Are you a New User? <a class="request" id="request" href="#">Request Now</a>
-                </p>
-              </div>
-            </form>
-          </div>
-          <!-- Login Fields End -->
-
-          <!-- Register Fields Start -->
-          <div id="register-box" style="display: none;">
-            <h2 class="login-text">Register an account</h2>
-            <p class="welcome-text">Start your account with us.</p>
-            <form>
-              <div class="form-group">
-                <label for="name">Your Name*</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email*</label>
-                <input type="email" class="form-control" id="register-email" placeholder="Enter your email" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number*</label>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <select class="custom-select" id="country-code">
-                      <option selected>+91</option>
-                      <option value="1">+1</option>
-                      <option value="44">+44</option>
-                    </select>
-                  </div>
-                  <input type="tel" class="form-control" id="phone" placeholder="9876543201" />
-                </div>
-              </div>
-              <button type="submit" class="btn btn-login">Request</button>
-              <div class="form-group mt-3">
-                <p class="new-user">
-                  Already have an account? <a class="login-text" id="login" href="#">Login?</a>
-                </p>
-              </div>
-            </form>
-          </div>
-          <!-- Register Fields End -->
-        </div>
-
-        <div class="login-copyright">
-          <p>&copy; Maharashtra Times Culture Club</p>
-        </div>
-      </div>
-      <div class="col-md-6 right-panel mobile">
-        <div class="right-panel-contents">
-          <h1 class="right-panel-heading">Maharashtra Times Culture Club</h1>
-          <div class="last-column">
-            <div class="avatar">
-              <img src="./assets/imgs/Avatar-1.png" alt="" />
-              <img src="./assets/imgs/Avatar-2.png" alt="" />
-              <img src="./assets/imgs/Avatar-3.png" alt="" />
-              <img src="./assets/imgs/Avatar-4.png" alt="" />
-              <img src="./assets/imgs/Avatar-5.png" alt="" />
+  <section class="login">
+    <div class="container-fluid">
+      <div class="row h-100">
+        <div class="col-md-6 left-panel">
+          <div class=" login-parent">
+            <div class="logo-box">
+              <a href="index.html"><img src="./assets/imgs/logo.png" alt="Logo" class="login-logo" /></a>
             </div>
-            <p class="right-panel-para">Join 40,000+ users</p>
+
+            <!-- Login Fields Start -->
+            <div id="login-box">
+              <h2 class="login-text">Log in</h2>
+              <p class="welcome-text">Welcome back! Please enter your details.</p>
+              <form action="#">
+
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password*</label>
+                  <input type="password" class="form-control" id="current-password" placeholder="********" required />
+                </div>
+                <div class="form-group text-right">
+                  <a class="forgot-pass" href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn btn-login">Login</button>
+                <div class="form-group mt-3">
+                  <p class="new-user">
+                    Are you a New User? <a class="request" id="request" href="#">Request Now</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+            <!-- Login Fields End -->
+
+            <!-- Register Fields Start -->
+            <div id="register-box" style="display: none;">
+              <h2 class="login-text">Register an account</h2>
+              <p class="welcome-text">Start your account with us.</p>
+              <form action="#">
+                <div class="form-group">
+                  <label for="name">Your Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="register-email" placeholder="Enter your email"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number*</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <select class="custom-select" id="country-code">
+                        <option selected>+91</option>
+                        <option value="1">+1</option>
+                        <option value="44">+44</option>
+                      </select>
+                    </div>
+                    <input type="tel" class="form-control" id="phone" placeholder="9876543201" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-login">Request</button>
+                <div class="form-group mt-3">
+                  <p class="new-user">
+                    Already have an account? <a class="login-text" id="login" href="#">Login?</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+            <!-- Register Fields End -->
+          </div>
+
+          <div class="login-copyright">
+            <p>&copy; Maharashtra Times Culture Club</p>
+          </div>
+        </div>
+        <div class="col-md-6 right-panel mobile">
+          <div class="right-panel-contents">
+            <h1 class="right-panel-heading">Maharashtra Times Culture Club</h1>
+            <div class="last-column">
+              <div class="avatar">
+                <img src="./assets/imgs/Avatar-1.png" alt="" />
+                <img src="./assets/imgs/Avatar-2.png" alt="" />
+                <img src="./assets/imgs/Avatar-3.png" alt="" />
+                <img src="./assets/imgs/Avatar-4.png" alt="" />
+                <img src="./assets/imgs/Avatar-5.png" alt="" />
+              </div>
+              <p class="right-panel-para">Join 40,000+ users</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
 
-    <script src="./assets/JS/register.js"></script>
-    <script src="scripts.js"></script>
-  </body>
+  <script src="./assets/JS/register.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
 </html>

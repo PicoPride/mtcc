@@ -4,6 +4,17 @@
   --color-3: #b2cd30;
   --color-4: #5573bc;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 70px;
+}
+::-webkit-scrollbar-track {
+  background: #fefefe;
+}
+::-webkit-scrollbar-thumb {
+  background: #231E60;
+  border-radius: 16px;
+}
 
 @font-face {
   font-family: "Nunito";
@@ -154,23 +165,6 @@ a:hover {
   text-decoration: none;
   color: initial;
 }
-.cursor {
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  border-radius: 50%;
-  background: transparent;
-  pointer-events: none;
-  z-index: 111;
-  border: 1px solid #000;
-  transition: all 0.2s ease-out;
-  animation: moveCursor1 0.5s infinite alternate;
-}
-
 .expand {
   background: transparent;
   animation: moveCursor2 0.5s forwards;
