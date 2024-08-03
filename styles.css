@@ -12,7 +12,7 @@
   background: #fefefe;
 }
 ::-webkit-scrollbar-thumb {
-  background: #231E60;
+  background: #231e60;
   border-radius: 16px;
 }
 
@@ -195,8 +195,8 @@ a:hover {
     opacity: 0;
   }
 }
-::selection{
-  background-color: #231E60;
+::selection {
+  background-color: #231e60;
   color: #fff;
 }
 .desktop {
@@ -209,7 +209,8 @@ section.about-slider {
   /* padding: 100px 140px; */
   margin-bottom: 80px;
 }
-.form-control:focus, .custom-select:focus{
+.form-control:focus,
+.custom-select:focus {
   box-shadow: none;
   border: 1px solid #e3e3e3;
 }
@@ -1081,7 +1082,8 @@ header.header,
 .sub-nav,
 section.host-event-section,
 section.application-second,
-section.content-section {
+section.content-section,
+section.feedback-form {
   /* padding: 20px 100px 0px 100px; */
   padding: 40px 40px;
 }
@@ -3432,10 +3434,6 @@ section.content-section {
   height: 100%;
 }
 
-
-
-
-
 section.login {
   width: 100%;
   height: 100%;
@@ -3611,25 +3609,59 @@ p.new-user .login-text {
   margin-top: auto;
   text-align: center;
 }
-.login-parent{
+.login-parent {
   margin: auto 0;
   width: 50%;
 }
 
-
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-#main-container {
-  min-height: 100vh; /* Ensure it takes at least full viewport height */
+section.feedback-banner .contents {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border-radius: 36px;
+  background: url(./assets/imgs/feedback-banner.jpeg) center center / cover
+    no-repeat;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
+  color: #fff;
+  padding: 30px 60px;
+  background-position-y: 25%;
 }
 
-footer {
-  margin-top: auto; /* Push footer to the bottom if using flexbox */
+section.feedback-form {
+  background: #eef1f8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+h2.feedback-heading {
+  line-height: 50px;
+  color: #231e60;
+  font-size: 48px;
+  font-weight: 400;
+}
+p.feedback-para {
+  color: #333333;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.feedback-form label {
+  color: #323232;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea#suggestions {
+  border: 1px solid #ededed;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fdfdfd;
+  box-shadow: 0 1px 2px 0 #1018280d;
+}
+.feedback-form select {
+  padding: 6px 16px;
 }
