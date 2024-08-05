@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join The Club</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="./assets/CSS/Bootstrap/bootstrap.min.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
      
+ 
     <header class="header">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-9 col-sm-9">
             <div class="search-bar">
               <form action="#">
-                <input type="text" class="form-control" placeholder="Search" />
-                <img src="./assets/imgs/ri_search-line.svg" alt="Search Icon" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                />
+                <a href="index.html">
+                  <img
+                    src="./assets/imgs/ri_search-line.svg"
+                    alt="Search Icon"
+                  />
+                </a>
               </form>
             </div>
           </div>
@@ -32,7 +41,7 @@
               <a href="#">Feedback</a>
               <a href="contact-us.html">Contact Us</a>
               <a href="join-the-club.html" class="join-btn">Join The Club</a>
-              <a href="#" class="login">Login</a>
+              <a href="login.html" class="login">Login</a>
             </nav>
           </div>
 
@@ -42,7 +51,7 @@
               src="./assets/imgs/ri_search-line.svg"
               alt=""
             />
-            <img class="mobile-logo" src="/assets/imgs/logo.png" alt="" />
+            <img class="mobile-logo" src="./assets/imgs/logo.png" alt="" />
             <img
               class="mobile-hamburger"
               src="./assets/imgs/breadcrumb.svg"
@@ -76,7 +85,10 @@
             <div class="dropdown">
               <a href="#" class="col-md-auto"
                 >Others
-                <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" />
+                <img
+                  src="./assets/imgs/down-arrow.svg"
+                  alt="Down Arrow Icon"
+                />
               </a>
               <div class="dropdown-menu" aria-labelledby="othersMenu">
                 <a class="dropdown-item" href="#">Item 1</a>
@@ -90,33 +102,34 @@
     </div>
     <div class="mobile-menu">
       <nav class="mobile-nav">
-            <a href="join-the-club.html" class="col-md-auto active"
-              >List Your Show</a
-            >
-            <a href="event-category.html" class="col-md-auto">Events</a>
-            <a href="#" class="col-md-auto">Workshops</a>
-            <a href="#" class="col-md-auto">Plays</a>
-            <a href="#" class="col-md-auto">Masterclass</a>
-            <a href="#" class="col-md-auto">Musical</a>
-            <a href="#" class="col-md-auto">Sports</a>
-            <a href="#" class="col-md-auto">Seminars</a>
-            <div class="dropdown">
-              <a href="#" class="col-md-auto"
-                >Others
-                <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" />
-              </a>
-              <div class="dropdown-menu" aria-labelledby="othersMenu">
-                <a class="dropdown-item" href="#">Item 1</a>
-                <a class="dropdown-item" href="#">Item 2</a>
-                <a class="dropdown-item" href="#">Item 3</a>
-              </div>
-            </div>
+        <a href="join-the-club.html" class="col-md-auto active"
+          >List Your Show</a
+        >
+        <a href="event-category.html" class="col-md-auto">Events</a>
+        <a href="#" class="col-md-auto">Workshops</a>
+        <a href="#" class="col-md-auto">Plays</a>
+        <a href="#" class="col-md-auto">Masterclass</a>
+        <a href="#" class="col-md-auto">Musical</a>
+        <a href="#" class="col-md-auto">Sports</a>
+        <a href="#" class="col-md-auto">Seminars</a>
+        <div class="dropdown">
+          <a href="#" class="col-md-auto"
+            >Others
+            <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" />
+          </a>
+          <div class="dropdown-menu" aria-labelledby="othersMenu">
+            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item" href="#">Item 2</a>
+            <a class="dropdown-item" href="#">Item 3</a>
+          </div>
+        </div>
         <div class="login-join">
           <a href="join-the-club.html" class="join-btn">Join The Club</a>
-          <a href="#" class="login">Login</a>
+          <a href="login.html" class="login">Login</a>
         </div>
       </nav>
     </div>
+
 
     <section class="banner-page-jtc feedback-banner">
       <div class="container">
@@ -156,7 +169,7 @@
                     <option>Reels making workshop</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group star-box">
                 <label>Rate us now*</label>
                 <div class="star-rating">
                     <span class="star"> <img src="./assets/imgs/kid_star.svg" alt="kid_star"></span>
@@ -272,9 +285,6 @@
         </div>
       </div>
     </footer>
-    
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>

@@ -815,10 +815,34 @@ section.content-section {
   width: 100%;
 }
 
+section.feedback-form{
+  padding: 40px 0;
+}
+h2.feedback-heading {
+  font-size: 28px;
+  font-weight: 500;
+}
+.star-box{
+  width: 100%;
+}
 
-
-
-
+section.page-not-found {
+  padding: 40px 0;
+}
+section.page-not-found .main-box{
+  flex-direction: column-reverse;
+}
+h1.not-found-heading {
+  font-size: 28px;
+  line-height: 38px;
+}
+p.not-found-para {
+  font-size: 16px;
+  line-height: 24px;
+}
+.full-width-btn-mobile{
+  width: 100%;
+}
 
 
 
