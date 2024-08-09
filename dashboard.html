@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./assets/CSS/Bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/CSS/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-9 col-sm-9">
+          <div class="search-bar">
+            <form action="#">
+              <input type="text" class="form-control" placeholder="Search" />
+              <a href="index.html">
+                <img src="./assets/imgs/ri_search-line.svg" alt="Search Icon" />
+              </a>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-sm-9">
+          <nav class="nav justify-content-end">
+            <a href="about.html">About The Club</a>
+            <a href="#">Programmes</a>
+            <a href="application-form.html">Application Form</a>
+            <a href="#">Gallery</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="join-the-club.html" class="join-btn">Join The Club</a>
+            <a href="login.html" class="login">Login</a>
+          </nav>
+        </div>
+
+        <div class="hamburger">
+          <img class="mobile-search-bar" src="./assets/imgs/ri_search-line.svg" alt="" />
+          <img class="mobile-logo" src="./assets/imgs/logo.png" alt="" />
+          <img class="mobile-hamburger" src="./assets/imgs/breadcrumb.svg" alt="Menu Icon" />
+          <!-- <img class="mobile-close" src="./assets/imgs/close.svg" alt="Close Icon" /> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="sub-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="logo">
+            <a href="#"><img src="./assets/imgs/logo.png" alt="Logo" /></a>
+          </div>
+        </div>
+
+        <div class="col-lg-9 second-menu">
+          <a href="join-the-club.html" class="col-md-auto active">List Your Show</a>
+          <a href="event-category.html" class="col-md-auto">Events</a>
+          <a href="#" class="col-md-auto">Workshops</a>
+          <a href="#" class="col-md-auto">Plays</a>
+          <a href="#" class="col-md-auto">Masterclass</a>
+          <a href="#" class="col-md-auto">Musical</a>
+          <a href="#" class="col-md-auto">Sports</a>
+          <a href="#" class="col-md-auto">Seminars</a>
+          <div class="dropdown">
+            <a href="#" class="col-md-auto">Others
+              <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="othersMenu">
+              <a class="dropdown-item" href="#">Item 1</a>
+              <a class="dropdown-item" href="#">Item 2</a>
+              <a class="dropdown-item" href="#">Item 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <nav class="mobile-nav">
+      <a href="join-the-club.html" class="col-md-auto active">List Your Show</a>
+      <a href="event-category.html" class="col-md-auto">Events</a>
+      <a href="#" class="col-md-auto">Workshops</a>
+      <a href="#" class="col-md-auto">Plays</a>
+      <a href="#" class="col-md-auto">Masterclass</a>
+      <a href="#" class="col-md-auto">Musical</a>
+      <a href="#" class="col-md-auto">Sports</a>
+      <a href="#" class="col-md-auto">Seminars</a>
+      <div class="dropdown">
+        <a href="#" class="col-md-auto">Others
+          <img src="./assets/imgs/down-arrow.svg" alt="Down Arrow Icon" />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="othersMenu">
+          <a class="dropdown-item" href="#">Item 1</a>
+          <a class="dropdown-item" href="#">Item 2</a>
+          <a class="dropdown-item" href="#">Item 3</a>
+        </div>
+      </div>
+      <div class="login-join">
+        <a href="join-the-club.html" class="join-btn">Join The Club</a>
+        <a href="login.html" class="login">Login</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- main Section -->
+
+  <section class="admin-dashboard">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 parent">
+
+          <div class="col-lg-3 left-side-bar">
+            <div class="member">
+              <img class="member-img" src="./assets/imgs/arvind-nagar.jpeg" alt="" />
+              <h3 class="member-name">Arvind Nagar</h3>
+            </div>
+
+            <div class="tools">
+              <div class="dashboard-option active-option" data-target=".right-container-dashboard">
+                <img src="./assets/imgs/dashboard.svg" alt="" />
+                <h3 class="tools-heading">Dashboard</h3>
+              </div>
+              <div class="dashboard-option" data-target=".manage-profile">
+                <img src="./assets/imgs/setting.svg" alt="" />
+                <h3 class="tools-heading">Manage Profile</h3>
+              </div>
+              <div class="dashboard-option" data-target=".change-password">
+                <img src="./assets/imgs/pass.svg" alt="" />
+                <h3 class="tools-heading">Change Password</h3>
+              </div>
+              <div class="dashboard-option" data-target=".recent-orders">
+                <img src="./assets/imgs/recent.svg" alt="" />
+                <h3 class="tools-heading">Recent Orders</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-9 ">
+            <div class="right-container content-container">
+              <div class="right-container-dashboard active-tool">
+                <div class="row mb-4">
+                  <div class="col-12">
+                    <div class="dashboard-header">Dashboard</div>
+                    <div class="sub-header">Welcome to MT Culture Club</div>
+                  </div>
+                </div>
+
+                <!-- Membership Card -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="membership-card">
+                      <h3>Become a member</h3>
+                      <p>
+                        Now you can subscribe to our monthly, quarterly, and
+                        yearly subscription. Select the subscription from the
+                        dropdown and unlock the pack of entertainment and
+                        learning.
+                      </p>
+                      <div class="plan-box">
+                        <select class="select-plan me-2">
+                          <option>Select Plan</option>
+                          <option>Yearly (Rs. 499)</option>
+                          <option>Quarterly(Rs. 199)</option>
+                          <option>Monthly (Rs. 99)</option>
+                        </select>
+                        <button class="subscribe-btn-dashboard">
+                          Subscribe
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Events Section -->
+                <div class="row">
+                  <!-- Upcoming Events -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <div class="events-card-design">
+                      <h4 class="events-header">Upcoming Events</h4>
+                      <div class="events-card">
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/plays.jpeg" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/workshop.jpeg" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/plays.jpeg" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/marsterclass.jpeg" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/events.jpeg" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event-button">
+                          <a href="#" class="book-btn full-width-btn">View All Events</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Past Events -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <div class="events-card-design">
+                      <h4 class="events-header">Past Events</h4>
+                      <div class="events-card">
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/slider-1.jpeg" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/slider-2.png" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/slider-3.png" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/slider-4.png" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event">
+                          <div class="event-info">
+                            <img src="./assets/imgs/slider-5.png" alt="Event Image" />
+                            <span>Natya Mahotsav 2024 - Aamne Samne</span>
+                          </div>
+                          <div class="event-date">24 May 2024</div>
+                        </div>
+                        <div class="event-button">
+                          <a href="#" class="book-btn full-width-btn">View All Events</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="manage-profile ">
+                <h2 class="form-heading">Manage Profile</h2>
+
+                <form action="#">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="firstName">First Name</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter First Name" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="email">Email *</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter Email" />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="mobileNumber">Mobile Number</label>
+                      <input type="text" class="form-control" id="mobileNumber" placeholder="Enter Mobile Number" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="landlineNumber">Landline Number</label>
+                      <input type="text" class="form-control" id="landlineNumber" placeholder="Enter Landline Number" />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="preferredLocation">Preferred Location for Workshops/Events</label>
+                      <input type="text" class="form-control" id="preferredLocation"
+                        placeholder="Enter Preferred Location" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="address">Locality and Address</label>
+                      <input type="text" class="form-control" id="address" placeholder="Enter Locality and Address" />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Gender</label>
+                      <div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gender" id="male" value="male" />
+                          <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gender" id="female" value="female" />
+                          <label class="form-check-label" for="female">Female</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="profilePhoto">Profile Photo</label>
+                    <input type="file" class="form-control-file" id="profilePhoto" />
+                  </div>
+                  <button type="submit" class="btn submit-btn">Submit</button>
+                </form>
+              </div>
+
+              <div class="change-password">
+
+                <h2 class="form-heading">Change Password</h2>
+
+                <form action="#">
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="firstName">Old Password</label>
+                      <input type="password" class="form-control" id="old-password" placeholder="Enter Old Password" />
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="lastName">New Password</label>
+                      <input type="password" class="form-control" id="new-password" placeholder="Enter New Password" />
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="retypePassword">Re Type Password</label>
+                      <input type="password" class="form-control" id="reType-password" placeholder="Re Type Password" />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn submit-btn">Submit</button>
+
+              </div>
+
+              <div class="recent-orders">
+                
+
+                <h2 class="form-heading">Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Order Id</th>
+                            <th>Event Name</th>
+                            <th>Amount Paid</th>
+                            <th>Payment Date</th>
+                            <th>Number of Tickets</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight-row">
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>Natya Mahotsav 2024 -Aamne Samne</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>04</td>
+                            <td class="status-confirmed"><span class="status-dot confirmed"></span>Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>Geet Ramayan</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>07</td>
+                            <td class="status-cancelled"><span class="status-dot cancelled"></span>Cancelled</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>Natya Mahotsav 2024 -Aamne Samne</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>12</td>
+                            <td class="status-pending"><span class="status-dot pending"></span>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>Geet Ramayan</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>07</td>
+                            <td class="status-confirmed"><span class="status-dot confirmed"></span>Confirmed</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>MTCC Masterclass with Sanya</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>02</td>
+                            <td class="status-pending"><span class="status-dot pending"></span>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>Natya Mahotsav 2024 -Aamne Samne</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>09</td>
+                            <td class="status-cancelled"><span class="status-dot cancelled"></span>Cancelled</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>Geet Ramayan</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>14</td>
+                            <td class="status-confirmed"><span class="status-dot confirmed"></span>Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>MTCC Masterclass with Sanya</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>144</td>
+                            <td class="status-confirmed"><span class="status-dot confirmed"></span>Confirmed</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>Natya Mahotsav 2024 -Aamne Samne</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>07</td>
+                            <td class="status-pending"><span class="status-dot pending"></span>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>Geet Ramayan</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>04</td>
+                            <td class="status-confirmed"><span class="status-dot confirmed"></span>Confirmed</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>01.</td>
+                            <td>MTCC101</td>
+                            <td>MTCC Masterclass with Sanya</td>
+                            <td>₹199.34</td>
+                            <td>24 Jun 2024</td>
+                            <td>01</td>
+                            <td class="status-confirmed"><span class="status-dot confirmed"></span>Confirmed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+
+
+
+
+              </div>
+
+
+              
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 footer-first-item">
+          <a href="index.html">
+            <img src="./assets/imgs/logo.png" alt="" class="logo" />
+          </a>
+          <p class="footer-text">
+            The MT Culture Club will empower, equip and enable its members to
+            lead more fulfilling lives, achieve their aspirations and do more
+            with their lives.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 footer-second-item custom-width">
+          <h2 class="menu-heading">Quick Links</h2>
+          <ul class="menu-itmes">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="application-form.html">Application Forms</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 footer-third-item">
+          <h2 class="menu-heading">MTCC Categories</h2>
+          <div class="two-line-menu">
+            <ul class="menu-itmes">
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Workshops</a></li>
+              <li><a href="#">Plays</a></li>
+              <li><a href="#">Masterclass</a></li>
+            </ul>
+            <ul class="menu-itmes">
+              <li><a href="#">Musical</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Seminars</a></li>
+              <li><a href="#">Others</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 footer-fourth-item custom-width">
+          <h2 class="menu-heading">Support</h2>
+          <ul class="menu-itmes">
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 footer-fifth-item custom-width">
+          <h2 class="menu-heading">Get Involved</h2>
+          <ul class="menu-itmes">
+            <li><a href="join-the-club.html">Join The Club</a></li>
+            <li><a href="./listYourPrograms.html">List Your Program</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 footer-sixth-item custom-width">
+          <h2 class="menu-heading">Legal</h2>
+          <ul class="menu-itmes">
+            <li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-12">
+          <div class="footer-seventh-item">
+            <h2 class="copyright-heading">
+              © 2024 Maharashtra Times Culture Club. All rights reserved.
+            </h2>
+            <div class="social-icons">
+              <a href="#"><img src="./assets/imgs/x.svg" alt="Twitter" /></a>
+
+              <a href="#"><img src="./assets/imgs/linkedin.svg" alt="Linkedin" /></a>
+              <a href="#"><img src="./assets/imgs/insta.svg" alt="Instagram" /></a>
+              <a href="#"><img src="./assets/imgs/fb.svg" alt="Facebook" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/JS/swiper-bundle.min.js"></script>
+  <script src="./assets/JS/register.js"></script>
+</body>
+
+</html>
